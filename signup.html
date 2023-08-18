@@ -42,30 +42,31 @@
   <img src="./img/login.png">
   </div>
   <main class="form-signin">
-      <h1 class="h3 mb-3 fw-normal">Inicie Sesión</h1>
-  
-      <div >
-        <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario" required>
-       
-      </div>
-      <div >
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
-        
-      </div>
-  
-      <div class="checkbox mb-3">
-          <div >
-          <input type="checkbox" value="remember-me"> Recordarme
-          </div>
-          <div >
-          <input type="checkbox" value="mostrarContraseña" id="mostrarContraseña"> Mostrar Contraseña
-          </div>
+      <h1 class="h3 mb-3 fw-normal">Formulario de Registro</h1>
+      <div>
+        <p id="mensaje"></p>
       </div>
       <div>
-        <p>¿No tienes cuenta? <a href="./signup.html">¡Registrate!</a></p>
+        <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario" required>       
       </div>
+      <div>
+        <input type="text" class="form-control" id="name-lastname" placeholder="Ingrese su nombre completo" required>       
+      </div>  
+      <div>
+        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese su correo electrónico" required>       
+      </div>
+      <div>
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Ingrese su contraseña" required>        
+      </div>
+      <div>
+        <input type="password" class="form-control" id="floatingPassword2" placeholder="Ingrese nuevamente su contraseña" required>        
+      </div>
+      <div>
+        <input type="checkbox" id="terms" required> Acepto los <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Términos y condiciones</a>
+      </div>
+
       
-      <button class="w-100 btn btn-lg btn-primary" type="submit" id="log-in-btn">Iniciar Sesión</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" id="sign-in-btn">Registrar datos</button>
   </main>
   
 
@@ -78,7 +79,7 @@
       <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
     </div>
   </footer>
-  <script src="js/login.js"></script>
+  <script src="js/signupscript.js"></script>
 </body>
 
 </html>
