@@ -11,9 +11,9 @@ mostrarContraseña.addEventListener("click", function() {
 
 let logued_in = false
 const button = document.getElementById("log-in-btn")
-const nombres_cookie = document.cookie
+const email_cookie = document.cookie
     .split("; ")
-    .find(row => row.startsWith("basenombres"))
+    .find(row => row.startsWith("basemail"))
     .split("=")[1];
 
     const pw_cookie = document.cookie
@@ -21,25 +21,25 @@ const nombres_cookie = document.cookie
     .find(row => row.startsWith("basepw"))
     .split("=")[1];
     // Se les otorga a las cookies variables constantes para manipularlas
-    let basenombres = "";
+    let basemail = "";
     let basepw = "";
     
 button.addEventListener("click",function(e){
     try{
-        basenombres = JSON.parse(nombres_cookie);
+        basemail = JSON.parse(email_cookie);
         basepw = JSON.parse(pw_cookie);
     } catch {
         alert("Sus credenciales no son correctas")
     }
-    const nombre = document.getElementById("username");
+    const email = document.getElementById("email");
     const pass1 = document.getElementById("floatingPassword");
-    // Comprueba que los campos no esten vacios & Busca en los arrays matcheos de Username y Contraseña
-    if((nombre.value.length > 0) && (pass1.value.length >= 6)){
-        for(let i = 0; i < basenombres.length; i++){
-            if(basenombres[i].nombre_de_usuario == nombre.value){
+    // Comprueba que los campos no esten vacios & Busca en los arrays matcheos de Email y Contraseña
+    if((email.value.length > 0) && (pass1.value.length >= 6)){
+        for(let i = 0; i < basemail.length; i++){
+            if(basemail[i].email_usuario == email.value){
                 
-                if((basenombres[i].numero_id == basepw[i].numero_id)&&(basepw[i].contrasena == pass1.value )){
-                    console.log(`${nombre.value} ha iniciado sesión con exito`);
+                if((basemail[i].email_id == basepw[i].email_id)&&(basepw[i].contrasena == pass1.value )){
+                    console.log(`${email.value} ha iniciado sesión con exito`);
                     logued_in = true;
                     console.log("Estado del Log-In: ", logued_in);
                     document.cookie = `logued_in=${true}; path=/`
@@ -49,7 +49,7 @@ button.addEventListener("click",function(e){
                     alert("Lo sentimos, pero sus credenciales no son correctas");
                 }
             } else {
-                alert("Su nombre de usuario no coincide con nuestras bases de datos");
+                alert("Su email no coincide con nuestras bases de datos");
             }
         }
     } else {

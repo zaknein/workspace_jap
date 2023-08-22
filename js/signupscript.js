@@ -2,7 +2,7 @@
 const bttn = document.getElementById("sign-in-btn");
 /*Variables para almacenar los datos de los usuarios*/
 let num_id = 1
-const basenombres = []
+const basemail = []
 const basepw = []
 let validacion = false
 /*Extraccion de variables del html*/
@@ -60,13 +60,13 @@ bttn.addEventListener("click",function(e){
     registrandose();
     if (validacion === true){
 
-        basenombres.push({nombre_de_usuario: nombreusuario.value, numero_id: num_id});
+        basemail.push({email_usuario: email.value, numero_id: num_id});
         basepw.push({contrasena:pass1.value, numero_id:num_id});
         num_id++;
-        let nombreusuariocookie = nombrecompleto.value;
-        document.cookie = `basenombres=${JSON.stringify(basenombres)}; path=/`;
+        let emailcookie = email.value;
+        document.cookie = `basemail=${JSON.stringify(basemail)}; path=/`;
         document.cookie = `basepw=${JSON.stringify(basepw)}; path=/`;
-        document.cookie = `nombrecompleto=${nombreusuariocookie}; path=/`;
+        document.cookie = `email=${emailcookie}; path=/`;
         mensaje.innerHTML = "¡Has sido registrado con exito!";
 
         setTimeout(function(e){
