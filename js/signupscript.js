@@ -1,45 +1,45 @@
 /*Script para realizar un Registro en vivo*/
-const bttn = document.getElementById("sign-in-btn");
+const BTTN = document.getElementById("sign-in-btn");
 /*Variables para almacenar los datos de los usuarios*/
-let num_id = 1
-const basemail = []
-const basepw = []
-let validacion = false
+let id_num = 1
+const EMAIL_BASE = []
+const PASSWORD_BASE = []
+let validation = false
 /*Extraccion de variables del html*/
-const nombreusuario = document.getElementById("username");
-const nombrecompleto = document.getElementById("name-lastname");
-const email = document.getElementById("floatingInput");
-const pass1 = document.getElementById("floatingPassword");
-const pass2 = document.getElementById("floatingPassword2");
-const mensaje = document.getElementById("mensaje");
-const chkbox = document.getElementById("terms");
+const USERNAME = document.getElementById("username");
+const FULLNAME = document.getElementById("name-lastname");
+const EMAIL = document.getElementById("floatingInput");
+const FPASSWORD = document.getElementById("floatingPassword");
+const SPASSWORD = document.getElementById("floatingPassword2");
+const MESSAGE = document.getElementById("message");
+const CHKBOX = document.getElementById("terms");
 
-function registrandose() {
-    mensaje.innerHTML = ""; // Limpiar el mensaje previo
+function signUp() {
+    MESSAGE.innerHTML = ""; // Limpiar el mensaje previo
 
     if (
-        nombreusuario.value.length >= 5 &&
-        nombrecompleto.value.length >= 5 &&
-        email.value.length > 0 &&
-        pass1.value.length >= 6 &&
-        pass1.value === pass2.value &&
-        chkbox.checked
+        USERNAME.value.length >= 5 &&
+        FULLNAME.value.length >= 5 &&
+        EMAIL.value.length > 0 &&
+        FPASSWORD.value.length >= 6 &&
+        FPASSWORD.value === SPASSWORD.value &&
+        CHKBOX.checked
     ) {
-        mensaje.innerHTML = "¡Todo correcto!";
-        validacion = true;
+        MESSAGE.innerHTML = "¡Todo correcto!";
+        validation = true;
     } else {
-        if (nombreusuario.value.length < 5) {
-            mensaje.innerHTML = "Su nombre de usuario debe ser de al menos 5 caracteres";
-        } else if (nombrecompleto.value.length < 5) {
-            mensaje.innerHTML = "Su nombre completo debe ser de al menos 5 caracteres";
-        } else if (email.value.length === 0) {
-            mensaje.innerHTML = "Por favor ingrese su correo electrónico";
-        } else if (pass1.value.length < 6) {
-            mensaje.innerHTML = "La contraseña debe contener al menos 6 caracteres";
-        } else if (pass1.value !== pass2.value) {
-            mensaje.innerHTML = "Las contraseñas deben coincidir";
-        } else if (!chkbox.checked) {
-            mensaje.innerHTML = "Debe aceptar los términos y condiciones para registrarse";
+        if (USERNAME.value.length < 5) {
+            MESSAGE.innerHTML = "Su nombre de usuario debe ser de al menos 5 caracteres";
+        } else if (FULLNAME.value.length < 5) {
+            MESSAGE.innerHTML = "Su nombre completo debe ser de al menos 5 caracteres";
+        } else if (EMAIL.value.length === 0) {
+            MESSAGE.innerHTML = "Por favor ingrese su correo electrónico";
+        } else if (FPASSWORD.value.length < 6) {
+            MESSAGE.innerHTML = "La contraseña debe contener al menos 6 caracteres";
+        } else if (FPASSWORD.value !== SPASSWORD.value) {
+            MESSAGE.innerHTML = "Las contraseñas deben coincidir";
+        } else if (!CHKBOX.checked) {
+            MESSAGE.innerHTML = "Debe aceptar los términos y condiciones para registrarse";
         }
     }
 }
@@ -47,30 +47,30 @@ function registrandose() {
 
 document.addEventListener("DOMContentLoaded", function(e) {
     /*Función de chequeo de datos previos al registro*/
-    nombreusuario.addEventListener("input", registrandose);
-    nombrecompleto.addEventListener("input", registrandose);
-    email.addEventListener("input", registrandose);
-    pass1.addEventListener("input", registrandose);
-    pass2.addEventListener("input", registrandose);
-    chkbox.addEventListener("change", registrandose);
+    USERNAME.addEventListener("input", signUp);
+    FULLNAME.addEventListener("input", signUp);
+    EMAIL.addEventListener("input", signUp);
+    FPASSWORD.addEventListener("input", signUp);
+    SPASSWORD.addEventListener("input", signUp);
+    CHKBOX.addEventListener("change", signUp);
 });
 
 /*Ingreso de datos a la DataBase*/
-bttn.addEventListener("click",function(e){
-    registrandose();
-    if (validacion === true){
+BTTN.addEventListener("click",function(e){
+    signUp();
+    if (validation === true){
 
-        basemail.push({email_usuario: email.value, numero_id: num_id});
-        basepw.push({contrasena:pass1.value, numero_id:num_id});
-        num_id++;
-        let emailcookie = email.value;
-        document.cookie = `basemail=${JSON.stringify(basemail)}; path=/`;
-        document.cookie = `basepw=${JSON.stringify(basepw)}; path=/`;
+        EMAIL_BASE.push({email_usuario: EMAIL.value, email_id: id_num});
+        PASSWORD_BASE.push({contrasena:FPASSWORD.value, email_id:id_num});
+        id_num++;
+        let emailcookie = EMAIL.value;
+        document.cookie = `EMAIL_BASE=${JSON.stringify(EMAIL_BASE)}; path=/`;
+        document.cookie = `PASSWORD_BASE=${JSON.stringify(PASSWORD_BASE)}; path=/`;
         document.cookie = `email=${emailcookie}; path=/`;
-        mensaje.innerHTML = "¡Has sido registrado con exito!";
+        MESSAGE.innerHTML = "¡Has sido registrado con exito!";
 
         setTimeout(function(e){
-            window.location = "login.html"},2500);
+         top.window.location = "credential-manager.html"},1000);
     } else {
         alert("Debes completar todos los campos para registrarte");
     }

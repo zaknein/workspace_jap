@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         console.log("No has iniciado sesión en la página, por favor inicia sesión")
         setTimeout(function() {
             alert("Inicia sesión para navegar por la página")
-            window.location = "login.html";
+            window.location = "credential-manager.html";
         }, 4000);
     }
     // Extraemos el valor del Nombre Completo de la Cookie y la insertamos en el HTML

@@ -10,75 +10,34 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Iniciar Sesión</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+<body class="iframeContent">
   <!-- Bootstrap de login.w-->
-  <div class="imagen_login" >
-  <img src="./img/login.png">
+  <div>
   </div>
-  <main class="form-signin">
-      <h1 class="h3 mb-3 fw-normal">Inicie Sesión</h1>
+<main class="iframeContent">
+  
   
       <div >
         <input type="text" class="form-control" id="email" placeholder="Email" required>
        
       </div>
+      
       <div >
         <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
         
       </div>
-  
+      <p><br></p>
       <div class="checkbox mb-3">
           <div >
-          <input type="checkbox" value="remember-me"> Recordarme
+          <input type="checkbox" value="remember-me" class="checkBoxtnp"> Recordarme
           </div>
           <div >
-          <input type="checkbox" value="mostrarContraseña" id="mostrarContraseña"> Mostrar Contraseña
+          <input type="checkbox" value="mostrarContraseña" id="mostrarContraseña" class="checkBoxtnp"> Mostrar Contraseña
           </div>
       </div>
-      <div>
-        <p>¿No tienes cuenta? <a href="./signup.html">¡Registrate!</a></p>
-      </div>
-      
       <button class="w-100 btn btn-lg btn-primary" type="submit" id="log-in-btn">Iniciar Sesión</button>
   </main>
-  
-
-
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
-    </div>
-  </footer>
-  <script src="js/login.js"></script>
+  <script src="js/login.js"></script> 
 </body>
 
 </html>

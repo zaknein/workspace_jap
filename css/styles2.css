@@ -1,0 +1,163 @@
+:root{
+    --coloroscuro:#22222B;
+    --colorgris:#434351;
+    --colorrosa:#AC6291;
+    --colorrosaclaro:#E6CADF;
+    --colorblanco:#ECE7EB;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 0;
+    background-color: var(--colorgris);
+    color:var(--colorrosaclaro);
+    overflow-x:hidden;
+}
+/* ============================================== HEADER ============================================ */
+nav{
+    width:100vw;
+    height:6vh;
+    background-color: var(--coloroscuro);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:fixed;
+    z-index:2;
+}
+nav a, #muchmore a{
+    text-decoration: none;
+    color:var(--colorrosa);
+    font-size: 1.5rem;
+}
+/* ======================================== PRESENTACION E-COMMERCE ======================================  */
+#presentation{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:8vw;
+    margin-right:8vw;
+}
+#text-presentation{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+#presentation h1{
+    width:30vw;
+    height:auto;
+    font-size:3.5rem;
+    text-align: left;
+}
+#presentation p{
+    font-size: 1.8rem;
+    width:30vw;
+    height:auto;
+    text-align: left;
+    position:relative;
+    top:-8vh;
+}
+.img-presentation{
+    border: 0.8px solid transparent;
+    border-radius:15px;
+    margin-right:4vw;
+    box-shadow: 3px 3px transparent;
+}
+#btn-presentation{
+    position:relative;
+    bottom:8vh;
+    right:7vw;
+    width:10vw;
+    height:6vh;
+    background-color: var(--coloroscuro);
+    color:var(--colorrosa);
+    font-size:1.5rem;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn-presentation:hover{
+    transition:0.8s;
+    background-color:var(--colorrosa);
+    color:var(--coloroscuro);
+    border:var(--colorrosaclaro);
+}
+/* ======================================== DISPLAY MAIN INDEX ======================================  */
+main{
+    display:none;
+}
+#category-container{
+    display:flex;
+    flex-direction: column;
+}
+#muchmore{
+
+    width:100%;
+    height:10vh;
+    text-align: center;
+    margin-top:3vh;
+}
+#categories{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.category-box{
+    width:32vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    cursor: pointer;
+}
+.category-box:hover{
+    transition: 0.8s;
+    scale:1.02;
+    background-color: var(--coloroscuro);
+    font-size:1.1rem;
+    text-overflow:ellipsis;
+}
+.category-image{
+    width:30vw;
+    height:auto;
+    border: 0.8px solid var(--colorrosaclaro);
+    border-radius:10px;
+    box-shadow: 3px 3px var(--colorrosaclaro);
+    margin-top:1vh;
+}
+/* ============================================== F00TER  =============================================  */
+footer{
+    width:100vw;
+    height:10vh;
+    background-color: var(--coloroscuro);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    color:var(--colorrosa);
+}
+/* ============================================ DISEÑOS DIVS ==========================================  */
+.little-div{
+    width:100%;
+    height:10vh;
+}
+.medium-div{
+    width:100%;
+    height:25vh;
+}
+.big-div{
+    width:100%;
+    height:40vh;
+}

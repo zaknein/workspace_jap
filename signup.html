@@ -11,74 +11,39 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Iniciar Sesión</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Bootstrap de login -->
+<body class="iframeContent">
+   <!-- Bootstrap de login -->
   <div class="imagen_login" >
-  <img src="./img/login.png">
-  </div>
-  <main class="form-signin">
-      <h1 class="h3 mb-3 fw-normal">Formulario de Registro</h1>
-      <div>
-        <p id="mensaje"></p>
-      </div>
-      <div>
-        <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario" required>       
-      </div>
-      <div>
-        <input type="text" class="form-control" id="name-lastname" placeholder="Ingrese su nombre completo" required>       
-      </div>  
-      <div>
-        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese su correo electrónico" required>       
-      </div>
-      <div>
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Ingrese su contraseña" required>        
-      </div>
-      <div>
-        <input type="password" class="form-control" id="floatingPassword2" placeholder="Ingrese nuevamente su contraseña" required>        
-      </div>
-      <div>
-        <input type="checkbox" id="terms" required> Acepto los <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Términos y condiciones</a>
-      </div>
-
-      
-      <button class="w-100 btn btn-lg btn-primary" type="submit" id="sign-in-btn">Registrar datos</button>
-  </main>
-  
-
-
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
     </div>
-  </footer>
+    <main class="iframeContent">
+      <p><br></p>
+        <h1 class="h3 mb-3 fw-normal">Formulario de Registro</h1>
+        <div>
+          <p id="message"></p>
+        </div>
+        <div>
+          <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario" required>       
+        </div>
+        <div>
+          <input type="text" class="form-control" id="name-lastname" placeholder="Ingrese su nombre completo" required>       
+        </div>  
+        <div>
+          <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese su correo electrónico" required>       
+        </div>
+        <div>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Ingrese su contraseña" required>        
+        </div>
+        <div>
+          <input type="password" class="form-control" id="floatingPassword2" placeholder="Ingrese nuevamente su contraseña" required>        
+        </div>
+        <div class="form-checkbox">
+          <input class="checkBoxtnp" type="checkbox" id="terms" required> Acepto los <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Términos y condiciones</a>
+        </div>
+  
+        
+        <button class="w-100 btn btn-lg btn-primary" type="submit" id="sign-in-btn">Registrar datos</button>
+    </main>
+ 
   <script src="js/signupscript.js"></script>
 </body>
 
