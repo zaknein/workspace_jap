@@ -9,41 +9,35 @@ mostrarContraseña.addEventListener("click", function() {
     }
   });
 
-let logued_in = false
-const BUTTON = document.getElementById("log-in-btn")
-const EMAIL_COOKIE = document.cookie
-    .split("; ")
-    .find(row => row.startsWith("EMAIL_BASE"))
-    .split("=")[1];
-
-    const PASSWORD_COOKIE = document.cookie
-    .split("; ")
-    .find(row => row.startsWith("PASSWORD_BASE"))
-    .split("=")[1];
-    // Se les otorga a las cookies variables constantes para manipularlas
-    let emailbase = ""
-    let passwordbase = ""
+  const BUTTON = document.getElementById("log-in-btn")
+  const EMAIL = document.getElementById("email");
+  const PASSWORD = document.getElementById("floatingPassword");
+  let logued_in = false
+  
+      // Se recuperan las bases de datos del Local Storage
+      
+      
 BUTTON.addEventListener("click",function(e){
-    try{
-        emailbase = JSON.parse(EMAIL_COOKIE);
-        passwordbase = JSON.parse(PASSWORD_COOKIE);
-        console.log(emailbase,passwordbase)
-    } catch {
-        alert("Sus credenciales no son correctas")
-    }
-    const EMAIL = document.getElementById("email");
-    const PASSWORD = document.getElementById("floatingPassword");
-    // Comprueba que los campos no esten vacios & Busca en los arrays matcheos de Email y Contraseña
-    if((EMAIL.value.length > 0) && (PASSWORD.value.length >= 6)){
-        for(let i = 0; i < emailbase.length; i++){
-            if(emailbase[i].email_usuario == EMAIL.value){                
-                if((emailbase[i].email_id == passwordbase[i].email_id)&&(passwordbase[i].contrasena == PASSWORD.value )){
-                    console.log(`${EMAIL.value} ha iniciado sesión con exito`);
+          
+    let database = JSON.parse(localStorage.getItem("DataBase")) || [];
+    let passwordbase = JSON.parse(localStorage.getItem("PasswordBase")) || [];
+
+    if (database.length == 0 && passwordbase.length == 0){
+        alert("Si aún no tienes una cuenta, por favor regístrate")
+    } else if ((EMAIL.value.length > 0) && (PASSWORD.value.length >= 6)){
+        for(let i = 0; i < database.length; i++){
+            if(database[i].email_usuario == EMAIL.value){                
+                if((database[i].email_id == passwordbase[i].email_id)&&(passwordbase[i].contrasena == PASSWORD.value )){                    
                     logued_in = true;
-                    console.log("Estado del Log-In: ", logued_in);
-                    document.cookie = `logued_in=${true}; path=/`
+                    // Se guarda variable Logued In y el Email del usuario.
+                    localStorage.setItem("loguedIn",true);
+                    localStorage.setItem("Email",EMAIL.value);
+                    // Se guardan las variables del Username && Fullname
+                    localStorage.setItem("username",database[i].username)
+                    localStorage.setItem("fullname",database[i].fullname)
                     setTimeout(function(){
                         top.window.location = "index.html"},2000);
+                    break;
                 } else {
                     alert("Lo sentimos, pero sus credenciales no son correctas");
                 }
@@ -55,20 +49,4 @@ BUTTON.addEventListener("click",function(e){
         alert("Debe llenar los campos para iniciar sesión");
     }
 })
-/*button.addEventListener("click",function(e){
-    logued_in = true
-    console.log("la variable ha cambiado", logued_in)
-    document.cookie = `logued_in=${true}; path=/`
-})
-const nombres_cookie = document.cookie
-    .split("; ")
-    .find(row => row.startsWith("basenombres"))
-    .split("=")[1];
-
-    const pw_cookie = document.cookie
-    .split("; ")
-    .find(row => row.startsWith("basepw"))
-    .split("=")[1];
-    // Se les otorga a las cookies variables constantes para manipularlas
-    const basenombres = JSON.parse(nombres_cookie);
-    const basepw = JSON.parse(pw_cookie);*/
+  

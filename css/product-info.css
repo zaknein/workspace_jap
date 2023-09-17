@@ -1,0 +1,30 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title {
+	font-size: 30px;
+}
+#product-container {
+	/* width:100%;
+    font-size: 20px;*/
+}
+.info-container {
+	width: 85%;
+	margin-left: 17vw;
+}
+.info-container div {
+	margin-top: 1.3vh;
+}
+.image-container {
+}
+.subtitle {
+	font-weight: bold;
+}
+.comment-box {
+	border: 1px solid gray;
+	padding: 1vh 1vw;
+	margin-top: 1vh;
+}

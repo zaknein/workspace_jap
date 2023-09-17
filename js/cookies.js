@@ -1,17 +1,10 @@
 // Leer cookies
 let logued_in = false
-function getCookie(email) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${email}=`);
-    if (parts.length === 2){ return parts.pop().split(";").shift();
-} else {return null;}
-}
-
-// Obtener datos almacenados en cookies
+const LOGOUT = document.getElementById("log-out-btn");
 
 document.addEventListener("DOMContentLoaded", function(e) {
     // Obtener variable logued_in almacenada en cookie
-    const storedlogued_in = getCookie("logued_in");
+    const storedlogued_in = localStorage.getItem("loguedIn");
     if (storedlogued_in) {
         console.log(storedlogued_in);
     } else {
@@ -26,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
             alert("Inicia sesión para navegar por la página")
             window.location = "credential-manager.html";
         }, 4000);
+    } else {
+        LOGOUT.style.display = "block";
     }
     // Extraemos el valor del Nombre Completo de la Cookie y la insertamos en el HTML
-    const storedemail = getCookie("email");
+    const storedemail = localStorage.getItem("Email");
     console.log(storedemail);
     const emailElement = document.getElementById("email");
 
@@ -39,3 +34,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
         console.log("No se pudo obtener el nombre completo de las cookies");
     }
 });
+
+function logout(){
+    logued_in = false;
+    localStorage.removeItem("loguedIn");
+    localStorage.removeItem("Email");
+    localStorage.removeItem("username");
+    localStorage.removeItem("fullname");
+    setTimeout( () =>{
+    window.location.reload()
+    ,1500});
+}
+LOGOUT.addEventListener("click",logout);

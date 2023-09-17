@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper, label {
+    position: relative;
+    display: inline-block;
+    top: 70%; /* Ajusta la distancia desde la parte superior al 50% */
+    left: 7%; /* Ajusta la distancia desde la izquierda según sea necesario */
+    transform: translate(-50%, -50%);
+}
+
+.wrapper label #button {
+    background: #aaaaaa;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label #button i {
+    color: #323334;
+    transition: transform .2s linear;
+    font-size: 20px;
+}
+
+#box:checked ~ label #button i::before {
+    content: '\f00d';
+}
+
+.wrapper .navs {
+    position: absolute;
+    top: 90%; /* Mostrar el menú debajo del botón */
+    right: -150%;
+    transform: scaleY(0); /* Cambiar a scaleY para desplegar hacia abajo */
+    transform-origin: top right;
+    transition: transform .4s ease-in;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background: #aaaaaa;
+    padding: 10px 20%; /* Añadir espacio para el menú desplegado */
+    border-radius: 15px;
+    z-index: 2; /* Asegurar que el menú esté por encima del botón */
+}
+
+#box:checked ~ .navs{
+    transform: scaleY(1);
+}
+
+.navs ul {
+    list-style: none;
+    display: list-item;
+    flex-direction: column;
+    align-items:center;
+    padding: 8px 15px;
+}
+
+.navs ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #323334;
+    font-size: 13px;
+    margin: 10px -20%;
+    padding: 10px 10px;
+}
+
+#box {
+    display: none;
+}
+.navs ul li a:hover{
+    background: #22222b;
+    border-radius: 30px;
+    color: #aaaaaa;
+}
+
+.nav-link {
+    color: #aaaaaa; /* Cambia el color que desees */
+    font-size: 18px; /* Cambia el tamaño de fuente que desees */
+    text-decoration: none; /* Quitar subrayado si no lo deseas */
+    font-weight: normal; /* Cambiar el peso de la fuente si lo deseas */
+    position: absolute; /* Establece la posición absoluta */
+    top: 30%; /* Ajusta la distancia desde la parte superior según sea necesario */
+    left: 85%; /* Ajusta la distancia desde la izquierda según sea necesario */
+}

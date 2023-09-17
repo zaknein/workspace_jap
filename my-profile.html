@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img\favicon.ico">
+  <link href="css/menucredentials.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e6f78feb22.js" crossorigin="anonymous"></script>
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -34,20 +37,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="credential-manager.html" id="email">Iniciar Sesión</a>
-          </li>
-        </ul>
+       <div class="wrapper">
+          <input type="checkbox" id="box">
+          <label for="box">
+            <div id="button">
+              <i class="fa fa-align-left"></i>
+            </div>
+          </label>
+          <div class="navs">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <br>
+              <li><a href="categories.html">Categorías</a></li>
+              <br>
+              <li><a href="sell.html">Vender</a></li>
+              <br>
+              <li><a href="#">Nosotros</a></li>
+            </ul>
+          </div>
+        </div>
+        <a class="nav-link" href="credential-manager.html" id="email">Iniciar Sesión</a>
+        <div class="little-div"></div>
+        <button id="log-out-btn"></button>
       </div>
     </div>
   </nav>

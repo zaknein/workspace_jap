@@ -3,7 +3,7 @@ const btnRegister = document.getElementById("registerbtnContainerCM")
 const animatedDiv = document.getElementById("layerTwoCredMan")
 const title = document.getElementById("credentialsDivTitle")
 const text = document.getElementById("credentialsDivText")
-
+const message = document.getElementById('message');
 btnLogin2.disabled = true;
 
 btnRegister.addEventListener("click", function(e){
@@ -15,6 +15,7 @@ btnRegister.addEventListener("click", function(e){
         setTimeout(() => {
             title.innerHTML = "Registro";
             title.classList.remove('fade-out');
+            message.classList.remove('fade-out');
         }, 1000);
         text.classList.add('fade-out');
         setTimeout(() => {
@@ -34,17 +35,23 @@ btnLogin2.addEventListener("click", function(e){
         btnLogin2.disabled = true;
         title.innerHTML = "Registro"
         title.classList.add('fade-out');
+        message.classList.add('fade-out');
         setTimeout(() => {
             title.innerHTML = "Login";
-            title.classList.remove('fade-out');
+            title.classList.remove('fade-out');            
         }, 1000);
         text.classList.add('fade-out');
         setTimeout(() => {
             text.innerHTML = "¡Bienvenido! <br>Nos alegra verte nuevamente, <br>esperamos disfrutes de tus compras el dia de hoy. <br><br>Por favor ingresa tus credenciales <br>para iniciar sesion."; 
             text.classList.remove('fade-out');
-        }, 1000); 
+        }, 1000);
+
     }else{
         btnLogin2.disabled = false;
 
     }
 });
+
+function closePopup() {
+    document.getElementById("termsPopup").style.display = "none";
+}

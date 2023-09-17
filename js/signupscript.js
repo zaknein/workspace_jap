@@ -1,19 +1,28 @@
 /*Script para realizar un Registro en vivo*/
 const BTTN = document.getElementById("sign-in-btn");
 /*Variables para almacenar los datos de los usuarios*/
-let id_num = 1
-const EMAIL_BASE = []
-const PASSWORD_BASE = []
-let validation = false
+let id_num = parseInt(localStorage.getItem("IDnum")) || 1;
+const DATABASE = JSON.parse(localStorage.getItem("DataBase")) || [];
+const PASSWORD_BASE = JSON.parse(localStorage.getItem("PasswordBase")) || [];
+let validation = false;
 /*Extraccion de variables del html*/
 const USERNAME = document.getElementById("username");
 const FULLNAME = document.getElementById("name-lastname");
 const EMAIL = document.getElementById("floatingInput");
 const FPASSWORD = document.getElementById("floatingPassword");
 const SPASSWORD = document.getElementById("floatingPassword2");
-const MESSAGE = document.getElementById("message");
+const MESSAGE = parent.document.getElementById("message");
 const CHKBOX = document.getElementById("terms");
 
+function emptyfields(){
+    USERNAME.value = "";
+    FULLNAME.value = "";
+    EMAIL.value = "";
+    FPASSWORD.value = "";
+    SPASSWORD.value = "";
+    MESSAGE.value = "";
+    CHKBOX.checked = false;
+}
 function signUp() {
     MESSAGE.innerHTML = ""; // Limpiar el mensaje previo
 
@@ -59,19 +68,33 @@ document.addEventListener("DOMContentLoaded", function(e) {
 BTTN.addEventListener("click",function(e){
     signUp();
     if (validation === true){
-
-        EMAIL_BASE.push({email_usuario: EMAIL.value, email_id: id_num});
+        // Se guardan todos los datos dentro del Array
+        
+        DATABASE.push({email_usuario: EMAIL.value, email_id: id_num, username:USERNAME.value, fullname:FULLNAME.value});
         PASSWORD_BASE.push({contrasena:FPASSWORD.value, email_id:id_num});
         id_num++;
-        let emailcookie = EMAIL.value;
-        document.cookie = `EMAIL_BASE=${JSON.stringify(EMAIL_BASE)}; path=/`;
-        document.cookie = `PASSWORD_BASE=${JSON.stringify(PASSWORD_BASE)}; path=/`;
-        document.cookie = `email=${emailcookie}; path=/`;
+        localStorage.setItem("IDnum",id_num);
+        localStorage.setItem("DataBase",JSON.stringify(DATABASE));
+        localStorage.setItem("PasswordBase",JSON.stringify(PASSWORD_BASE));        
         MESSAGE.innerHTML = "¡Has sido registrado con exito!";
 
-        setTimeout(function(e){
-         top.window.location = "credential-manager.html"},1000);
+        // Insertar función de movimiento del bloque
+        const btnLogin2 = parent.document.getElementById("loginbtnContainerCM")
+        setTimeout(() => {
+            btnLogin2.click()
+            },1000);
+        setTimeout(() => {
+            emptyfields()
+            },2000);
     } else {
         alert("Debes completar todos los campos para registrarte");
     }
 })
+
+function showPopup() {
+    parent.document.getElementById("termsPopup").style.display = "block";
+}
+
+document.getElementById("showTerms").addEventListener("click", () => {
+    showPopup();
+});
