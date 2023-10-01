@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <!-- ================================ Stylesheets ====================================== -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menudropdown.css">
+  <link rel="stylesheet" href="css/about-us.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/divs-design.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/profilemenu.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <!-- ================================ Stylesheets ====================================== -->
+  <link rel="icon" type="image/x-icon" href="img\favicon.ico">
+  <script src="https://kit.fontawesome.com/e6f78feb22.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="credManBody">
+  <!-- ================================ HEADER ====================================== -->
+  <nav>
+    <div class="wrapper">
+      <input type="checkbox" id="box">
+      <label for="box">
+        <div id="button">
+          <i class="fa fa-align-left"></i>
+        </div>
+      </label>
+      <div class="navs">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <br>
+          <li><a href="categories.html">Categorías</a></li>
+          <br>
+          <li><a href="sell.html">Vender</a></li>
+          <br>
+          <li><a href="about-us.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner">
+    </div>
+  <!-- =============================== Dropdown =====================================  -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Usuario
+      </button>
+      <div class="dropdown-menu" aria-labelledby="userDropdown">
+        <p id="email"></p>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+        <a class="dropdown-item" href="cart.html">Mi Carrito</a>
+        <a class="dropdown-item" href="#">Mis Compras</a>
+        <a class="dropdown-item" href="#">Configuración</a>
+        <div class="dropdown-divider"></div>
+        <button id="log-out-btn" class="dropdown-item">Log-Out</button>
+        <div class="wrap-toggle">
+          <input type="checkbox" id="toggle" class="offscreen">
+          <label for="toggle" class="switch"></label>
+        </div>
+      </div>
+    </div>
+    <a class="nav-link" href="credential-manager.html" id="log-in">Iniciar Sesión</a>
+  </nav>
+  <div class="little-div"></div>
+  
+  <!-- =============================== SECCION PRINCIPAL ======================================= -->
+  <main>
+    <div id="personBtnContainer">
+        <div id="personBtn">
+            <label class="personLabel" for="homeBtn">
+                <input class="personFaceBox" type="radio" name="person" id="homeBtn">
+                <img class="personFaceImage" src="img\about-us-home-icon.png" alt="home">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+
+            <label class="personLabel" for="person1">
+                <input class="personFaceBox" type="radio" name="person" id="person1">
+                <img class="personFaceImage" src="img\about-us-apalombo-face.png" alt="Persona 1">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person2">
+                <input class="personFaceBox" type="radio" name="person" id="person2">
+                <img class="personFaceImage" src="img\about-us-bmendez-face.png" alt="Persona 2">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person3">
+                <input class="personFaceBox" type="radio" name="person" id="person3">
+                <img class="personFaceImage" src="img\about-us-bmoreira-face.png" alt="Persona 3">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person4">
+                <input class="personFaceBox" type="radio" name="person" id="person4">
+                <img class="personFaceImage" src="img/about-us-fechaide-face.png" alt="Persona 4">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person5">
+                <input class="personFaceBox" type="radio" name="person" id="person5">
+                <img class="personFaceImage" src="img\about-us-gkroger-face.png" alt="Persona 5">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person6">
+                <input class="personFaceBox" type="radio" name="person" id="person6">
+                <img class="personFaceImage" src="img\about-us-ipereira-face.png" alt="Persona 6">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        
+            <label class="personLabel" for="person7">
+                <input class="personFaceBox" type="radio" name="person" id="person7">
+                <img class="personFaceImage" src="img\about-us-rdebrun-face.png" alt="Persona 7">
+                <div class="connector"></div>
+                <div class="connectionPoint"></div>
+            </label>
+        </div>
+    </div>
+    <div id="personContainer">
+        <img id="shadowAboutUs" src="img\about-us-shadow.png" alt="shadow">
+        <div id="aboutUsContainer">
+            <img id="personImage" src="" alt="image">
+            <div id="aboutUsInfoContainer">
+                <div id="infoContainerLeft">
+                    <h1 id="nameH1Title"></h1>
+                    <p id="presentationAUP"></p>
+                    <h2 id="experienceH2Title"></h2>
+                    <p id="experienceAUP"></p>
+                </div>
+                <div id="separatorUI"></div>
+                <div id="infoContainerRight">
+                    <h2 id="studiesH2Title"></h2>
+                    <ul id="studiesAUP"></ul>
+                </div>
+            </div>
+        </div>
+        <img id="shadowAboutUs" src="img\about-us-leaf-shadow.png" alt="shadow">
+    </div>
+  </main>
+  <!-- ============================================== F00TER ===================================== -->
+  <footer>
+      <p>
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="js/init.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/about-us.js"></script>
+  <script src="js/darktheme.js"></script>
+</body>
+
+</html>

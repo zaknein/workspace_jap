@@ -1,0 +1,13 @@
+/* ============================================ DISEÑOS DIVS ==========================================  */
+.little-div{
+    width:100%;
+    height:10vh;
+}
+.medium-div{
+    width:100%;
+    height:25vh;
+}
+.big-div{
+    width:100%;
+    height:40vh;
+}

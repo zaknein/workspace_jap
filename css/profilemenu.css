@@ -1,0 +1,67 @@
+/* Estilo para el enlace del menú desplegable */
+.dropdown-menu a {
+    padding: 10px 20px; /* Espaciado interno para los elementos del menú */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: block; /* Hacer que los enlaces ocupen todo el ancho del menú */
+    color: var(--whitetext); /* Color de texto */
+    font-size: 24px;
+}
+.dropdown-menu p {
+    padding: 10px 20px; /* Espaciado interno para los elementos del menú */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: block; /* Hacer que los enlaces ocupen todo el ancho del menú */
+    color: var(--whitetext) /* Color de texto */
+}
+/* Estilo para el enlace activo (cuando el usuario pasa el mouse sobre el enlace) */
+.dropdown-menu a:hover {
+    background-color: #f8f8f8; /* Cambiar el color de fondo cuando el mouse está encima del enlace */
+}
+
+/* Estilo para el divisor entre elementos del menú */
+.dropdown-divider {
+    margin: 5px 0; /* Espacio entre los divisores y los elementos del menú */
+    border-color: #ddd; /* Color del divisor */
+}
+
+/* Estilo para el enlace del menú desplegable cuando está deshabilitado (si es necesario) */
+.dropdown-menu a.disabled {
+    color: #999; /* Color de texto para enlaces deshabilitados */
+    cursor: not-allowed; /* Cambiar el cursor cuando está deshabilitado */
+}
+
+/* Estilo para el enlace del menú desplegable cuando está deshabilitado y se pasa el mouse sobre él (si es necesario) */
+.dropdown-menu a.disabled:hover {
+    background-color: transparent; /* Mantener el fondo transparente en enlaces deshabilitados */
+}
+
+/* Estilo para el botón desplegable */
+.btn.dropdown-toggle {
+    display: none;
+    background-color: var(--colorprincipal); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Eliminar borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno del botón */
+}
+
+/* Estilo para el botón desplegable cuando el mouse está encima */
+.btn.dropdown-toggle:hover {
+    background-color: var(--colorsecundario); /* Cambiar el color de fondo al pasar el mouse sobre el botón */
+    color: #fff; /* Cambiar el color del texto al pasar el mouse sobre el botón */
+}
+
+/* Estilo para el menú desplegable en sí */
+.dropdown-menu {
+    background-color: var(--coloroscuro); /* Color de fondo del menú */
+    border: none; /* Eliminar borde del menú */
+    border-bottom-left-radius: 15px; /* Bordes redondeados del menú */
+}
+/* Estilo para el texto dentro del botón desplegable */
+.btn.dropdown-toggle span {
+    margin-right: 5px; /* Espaciado entre el ícono y el texto del botón */
+}
+
+/* Estilo para el ícono dentro del botón desplegable (Font Awesome) */
+.btn.dropdown-toggle i {
+    font-size: 18px; /* Tamaño del ícono */
+}

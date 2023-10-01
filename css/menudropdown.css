@@ -1,0 +1,87 @@
+
+.wrapper, label {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper label #button {
+    position: relative;
+    background: var(--coloroscuro) ;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2vh;
+    z-index: 2; 
+    border: var(--coloroscuro) 15px solid;
+}
+
+label #button i {
+    color: #323334;
+    transition: transform .2s linear;
+    font-size: 20px;
+}
+#box:not(:checked) ~ label #button i::before {
+    content: image-set('../img/logo_e.png');
+    transition: opacity 0.3s ease;
+}
+
+#box:checked ~ label #button i::before {
+    content: image-set('../img/logo_cart.png');
+}
+
+.wrapper .navs {
+    position: fixed;
+    top: 7vh; /* Mostrar el menú debajo del botón */
+    transform: scaleY(0); /* Cambiar a scaleY para desplegar hacia abajo */
+    transform-origin: top right;
+    transition: transform .4s ease-in;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background: var(--coloroscuro);
+    left: 0;
+    border-bottom-right-radius: 15px;
+    padding-top: 5vh;
+    padding-left: 3vw;
+
+}
+
+#box:checked ~ .navs{
+    transform: scaleY(1);
+}
+
+.navs ul {
+    list-style: none;
+    display: list-item;
+    flex-direction: column;
+    align-items:center;
+    padding: 8px 15px;
+}
+
+.navs ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorblanco);
+    font-size: 13px;
+    margin: 10px -20%;
+    padding: 10px 10px;
+}
+
+#box {
+    display: none;
+}
+.navs ul li a:hover{
+    color: var(--colorprincipal);
+}
+
+.nav-link {
+    color: #aaaaaa; /* Cambia el color que desees */
+    font-size: 18px; /* Cambia el tamaño de fuente que desees */
+    text-decoration: none; /* Quitar subrayado si no lo deseas */
+    font-weight: normal; /* Cambiar el peso de la fuente si lo deseas */
+    position: absolute; /* Establece la posición absoluta */
+    right: 8%;
+}

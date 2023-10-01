@@ -1,0 +1,81 @@
+{
+    "integrantes": [
+      {
+        "nombre": "Axel Palombo",
+        "descripcion": "Desarrollador web con experiencia en diseño de sitios web responsivos y aplicaciones web interactivas.",
+        "experiencia": "Trabajó como desarrollador web en ABC Web Solutions durante 4 años. Desarrolló aplicaciones web para clientes de diversas industrias.",
+        "imagen": "img/about-us-apalombo.png",
+        "estudios": [
+          "Licenciatura en Informática en la Universidad XYZ",
+          "Curso de Diseño Web Avanzado en la Escuela de Diseño ABC",
+          "Certificado en Desarrollo Front-End en línea"
+        ]
+      },
+      {
+        "nombre": "Bruno Mendez",
+        "descripcion": "Desarrollador web con un enfoque en el desarrollo de aplicaciones web escalables y de alto rendimiento.",
+        "experiencia": "Trabajó como desarrollador full-stack en Tech Innovators durante 5 años. Lideró proyectos de desarrollo web para empresas líderes en tecnología.",
+        "imagen": "img/about-us-bmendez.png",
+        "estudios": [
+          "Licenciatura en Ciencias de la Computación en la Universidad 123",
+          "Certificado en Desarrollo de Aplicaciones Web en la Escuela de Tecnología XYZ",
+          "Diploma en Programación Avanzada en línea"
+        ]
+      },
+      {
+        "nombre": "Bruno Moreira",
+        "descripcion": "Diseñador web y desarrollador front-end con pasión por la creación de experiencias de usuario intuitivas y atractivas.",
+        "experiencia": "Trabajó como diseñador web en Creative Designs Studio durante 3 años. Diseñó y desarrolló sitios web creativos y atractivos.",
+        "imagen": "img/about-us-bmoreira.png",
+        "estudios": [
+          "Diploma en Diseño Gráfico en la Escuela de Diseño ABC",
+          "Curso de Desarrollo Front-End en la Escuela de Tecnología XYZ",
+          "Certificado en Diseño de Experiencia de Usuario (UX) en línea"
+        ]
+      },
+      {
+        "nombre": "Franco Echaide",
+        "descripcion": "Desarrollador web con experiencia en la creación de aplicaciones web personalizadas y soluciones de comercio electrónico.",
+        "experiencia": "Trabajó como desarrollador back-end en E-Commerce Solutions Co. durante 4 años. Implementó sistemas de comercio electrónico para clientes minoristas.",
+        "imagen": "img/about-us-fechaide.png",
+        "estudios": [
+          "Licenciatura en Ingeniería de Software en la Universidad ABC",
+          "Certificado en Desarrollo de Aplicaciones Web Avanzadas en línea",
+          "Curso de Administración de Bases de Datos en la Escuela de Tecnología XYZ"
+        ]
+      },
+      {
+        "nombre": "German Kroger",
+        "descripcion": "Desarrollador full-stack con experiencia en la creación de aplicaciones web escalables y sistemas de gestión de contenido.",
+        "experiencia": "Trabajó como desarrollador full-stack en Tech Solutions Inc. durante 6 años. Diseñó y desarrolló sistemas de gestión de contenido personalizados.",
+        "imagen": "img/about-us-gkroger.png",
+        "estudios": [
+          "Licenciatura en Ingeniería Informática en la Universidad XYZ",
+          "Curso de Desarrollo Full-Stack en la Escuela de Tecnología ABC",
+          "Diploma en Seguridad Informática en línea"
+        ]
+      },
+      {
+        "nombre": "Ivan Pereira",
+        "descripcion": "Diseñador de experiencia de usuario (UX) con habilidades en diseño de interfaces atractivas y usables.",
+        "experiencia": "Trabajó como diseñador UX en User-Centered Designs Agency durante 4 años. Diseñó interfaces de usuario intuitivas para aplicaciones móviles y web.",
+        "imagen": "img/about-us-ipereira.png",
+        "estudios": [
+          "Licenciatura en Diseño de Interacción en la Universidad 123",
+          "Curso de Diseño de Interfaces de Usuario en la Escuela de Diseño XYZ",
+          "Certificado en Psicología de la Interacción en línea"
+        ]
+      },
+      {
+        "nombre": "Rocio De Brun",
+        "descripcion": "Desarrolladora web full-stack con experiencia en el desarrollo de aplicaciones web complejas y sistemas de gestión de contenido.",
+        "experiencia": "Trabajó como desarrolladora full-stack en WebTech Solutions durante 5 años. Lideró proyectos de desarrollo web para clientes corporativos.",
+        "imagen": "img/about-us-rdebrun.png",
+        "estudios": [
+          "Licenciatura en Ciencias de la Computación en la Universidad ABC",
+          "Diploma en Desarrollo Web Full-Stack en la Escuela de Tecnología XYZ",
+          "Certificado en Administración de Proyectos Ágiles en línea"
+        ]
+      }
+    ]
+  }

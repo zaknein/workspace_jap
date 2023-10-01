@@ -1,0 +1,33 @@
+:root{
+    --coloroscuro:#22222B;
+    --colorgris:#434351;
+    --colorrosa:#6267ac;
+    --colorrosaclaro:#616dd8;
+    --colorblanco:#ECE7EB;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+/* ============================================== HEADER ============================================ */
+nav{
+    width:100vw;
+    height:7vh;
+    background-color: var(--coloroscuro);
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    z-index:2;
+}
+
+#commerceBanner{
+    position: relative;
+    height: 35px;
+    top: -20px;
+}
+
+nav a, #muchmore a{
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-size: 1.5rem;
+}

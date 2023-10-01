@@ -9,36 +9,55 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="css/menuinicio.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/profilemenu.css">
+  <link rel="stylesheet" href="css/darkmode.css">
   <link rel="icon" type="image/x-icon" href="img\favicon.ico">
 </head>
 
 <body class="credManBody">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="credential-manager.html" id="email">Iniciar Sesión</a>
-          </li>
-          <li class="nav-item">
-            <button id="log-out-btn"></button>
-          </li>
+  <nav>
+    <div class="wrapper">
+      <input type="checkbox" id="box">
+      <label for="box">
+        <div id="button">
+          <i class="fa fa-align-left"></i>
+        </div>
+      </label>
+      <div class="navs">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <br>
+          <li><a href="categories.html">Categorías</a></li>
+          <br>
+          <li><a href="sell.html">Vender</a></li>
+          <br>
+          <li><a href="about-us.html">Nosotros</a></li>
         </ul>
       </div>
+      <img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner">
     </div>
+  <!-- =============================== Dropdown =====================================  -->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Usuario
+      </button>
+      <div class="dropdown-menu" aria-labelledby="userDropdown">
+        <p id="email"></p>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+        <a class="dropdown-item" href="cart.html">Mi Carrito</a>
+        <a class="dropdown-item" href="#">Mis Compras</a>
+        <a class="dropdown-item" href="#">Configuración</a>
+        <div class="dropdown-divider"></div>
+        <button id="log-out-btn" class="dropdown-item">Log-Out</button>
+        <div class="wrap-toggle">
+          <input type="checkbox" id="toggle" class="offscreen">
+          <label for="toggle" class="switch"></label>
+        </div>
+      </div>
+    </div>
+    <a class="nav-link" href="credential-manager.html" id="log-in">Iniciar Sesión</a>
   </nav>
   <main>
     <div class="container">
@@ -67,6 +86,7 @@
   <script src="js/init.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/cookies.js"></script>
+  <script src="js/darktheme.js"></script>
 </body>
 
 </html>

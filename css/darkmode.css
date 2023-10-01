@@ -1,0 +1,34 @@
+/* =================================================== SWITCH DARK MODE ========================================*/
+.switch{
+    margin-top: 10px;
+    margin-left: 30px;
+    position:relative;
+    display:inline-block;
+    width:60px;
+    height:30px;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    cursor:pointer;
+}
+.switch::after{
+    content:'';
+    position:absolute;
+    width:25px;
+    height:25px;
+    border-radius: 50px;
+    background-color: #000000;
+    left:2.5px;
+    top:2.5px;
+    transition: all 0.4s;
+}
+input[type="checkbox"]:checked + .switch::after{
+    transform:translateX(30px);
+    background-color:#000000;
+}
+input[type="checkbox"]:checked + .switch{
+    background-color: #FFFFFF;
+}
+.offscreen {
+    position:absolute;
+    left:-999999px;
+}

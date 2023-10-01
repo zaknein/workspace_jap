@@ -6,51 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>eMercado - Todo lo que busques está aquí</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <!-- ================================ Stylesheets ====================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menudropdown.css">
+  <link rel="stylesheet" href="css/divs-design.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/product-info.css">
+  <link rel="stylesheet" href="css/profilemenu.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <!-- ================================ Stylesheets ====================================== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/x-icon" href="img\favicon.ico">
-  <link rel="stylesheet" href="css/product-info.css">
-  <link href="css/menucredentials.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img\favicon.ico"> 
   <script src="https://kit.fontawesome.com/e6f78feb22.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="credManBody">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-       <div class="wrapper">
-          <input type="checkbox" id="box">
-          <label for="box">
-            <div id="button">
-              <i class="fa fa-align-left"></i>
-            </div>
-          </label>
-          <div class="navs">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <br>
-              <li><a href="categories.html">Categorías</a></li>
-              <br>
-              <li><a href="sell.html">Vender</a></li>
-              <br>
-              <li><a href="#">Nosotros</a></li>
-            </ul>
+    <!-- ================================ HEADER ====================================== -->
+    <nav>
+      <div class="wrapper">
+        <input type="checkbox" id="box">
+        <label for="box">
+          <div id="button">
+            <i class="fa fa-align-left"></i>
+          </div>
+        </label>
+        <div class="navs">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <br>
+            <li><a href="categories.html">Categorías</a></li>
+            <br>
+            <li><a href="sell.html">Vender</a></li>
+            <br>
+            <li><a href="about-us.html">Nosotros</a></li>
+          </ul>
+        </div>
+        <img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner">
+      </div>
+    <!-- =============================== Dropdown =====================================  -->
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Usuario
+        </button>
+        <div class="dropdown-menu" aria-labelledby="userDropdown">
+          <p id="email"></p>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+          <a class="dropdown-item" href="cart.html">Mi Carrito</a>
+          <a class="dropdown-item" href="#">Mis Compras</a>
+          <a class="dropdown-item" href="#">Configuración</a>
+          <div class="dropdown-divider"></div>
+          <button id="log-out-btn" class="dropdown-item">Log-Out</button>
+          <div class="wrap-toggle">
+            <input type="checkbox" id="toggle" class="offscreen">
+            <label for="toggle" class="switch"></label>
           </div>
         </div>
-        <a class="nav-link" href="credential-manager.html" id="email">Iniciar Sesión</a>
-        <div class="little-div"></div>
-        <button id="log-out-btn"></button>
       </div>
-    </div>
-  </nav>
+      <a class="nav-link" href="credential-manager.html" id="log-in">Iniciar Sesión</a>
+    </nav>
+    <div class="little-div"></div>
+    <!-- =============================== PRESENTACION PAGINA =====================================  -->
   <main>
     <div id="wholeProduct-container">
       <div class="container">
@@ -115,6 +136,7 @@
     </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/darktheme.js"></script>
   <script src="js/init.js"></script>
   <script src="js/product-info.js"></script>
   <script src="js/cookies.js"></script>

@@ -1,14 +1,15 @@
 // Leer cookies
 let logued_in = false
 const LOGOUT = document.getElementById("log-out-btn");
-
+const DROPDOWN = document.getElementById('userDropdown')
+const LOGIN = document.getElementById('log-in');
 document.addEventListener("DOMContentLoaded", function(e) {
     // Obtener variable logued_in almacenada en cookie
     const storedlogued_in = localStorage.getItem("loguedIn");
     if (storedlogued_in) {
         console.log(storedlogued_in);
     } else {
-        console.log("No ha cargado la cookie");
+        console.log("No estás logueado");
     }
 
     logued_in = storedlogued_in === "true"; // Convertir el valor a un booleano
@@ -20,18 +21,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
             window.location = "credential-manager.html";
         }, 4000);
     } else {
+        LOGIN.style.display = "none";
+        DROPDOWN.style.display = "block";
         LOGOUT.style.display = "block";
+        DROPDOWN.innerHTML = localStorage.getItem('username')
     }
     // Extraemos el valor del Nombre Completo de la Cookie y la insertamos en el HTML
     const storedemail = localStorage.getItem("Email");
-    console.log(storedemail);
     const emailElement = document.getElementById("email");
 
     if (storedemail) {
         emailElement.innerHTML = storedemail;
         emailElement.href = "my-profile.html"
     } else {
-        console.log("No se pudo obtener el nombre completo de las cookies");
+        console.log("No hay información guardada");
     }
 });
 

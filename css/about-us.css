@@ -1,0 +1,128 @@
+#personContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 550px;
+    width: 100%;
+    background-color: var(--darkalphacolor);
+}
+#personImage{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    top: 5%;
+    left: 3%;
+    height: 90%;
+    z-index: 1;
+}
+#aboutUsInfoContainer{
+    transition: all 0.5s;
+    height: 100%;
+    width: 80VW;
+    left: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 1px 5px 22px rgba(0,0,0,1);
+}
+#separatorUI{
+    transition: all 0.5s;
+    margin: 5%;
+    position: relative;
+    height: 80%;
+    width: 3px;
+    background-color: var(--colorgris);
+}
+#infoContainerLeft{
+    transition: all 0.5s;
+    position: relative;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#infoContainerRight{
+    position: relative;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+#shadowAboutUs{
+    position: relative;
+    height: 100%;
+    z-index: 0;
+
+}
+.personLabel{
+    transition: all .5s;
+    position: relative;
+}
+.connector{
+    left: 50%;
+    transition: all .8s;
+    position: relative;
+    height: 40px;
+    width: 1px;
+
+    z-index: 0;
+}
+.connectionPoint{
+    transition: all 1s;
+    position: relative;
+    height: 1px;
+
+    left: 5%;
+    width: 90%;
+    z-index: 0;
+}
+.personFaceBox:checked ~ .connector{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 15px 8px rgba(173, 166, 250, 0.9);
+}
+.personFaceBox:checked ~ .connectionPoint{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 15px 6px rgba(173, 166, 250, 0.9);
+}
+
+.personFaceImage{
+    position: relative;
+    height: 60px;
+    transition: all .5s;
+    border-radius: 100%;
+    box-shadow: 0px 0px 60px 4px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+.personFaceImage:hover{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: scale(120%);
+}
+.personFaceBox:checked ~ .personFaceImage{
+    position: relative;
+    transform: scale(120%);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 8px rgba(191, 188, 226, 0.9);
+}
+
+#personBtnContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5%;
+}
+.personFaceBox{
+    display: none;
+}
+

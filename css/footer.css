@@ -1,0 +1,28 @@
+:root{
+    --coloroscuro:#22222B; /*var(--coloroscuro)*/
+    --colorgris:#65656d; /*var(--colorgris)*/
+    --colorprincipal:#5a61be; /*var(--colorprincipal)*/
+    --colorsecundario:#7982d4; /*var(--colorsecundario)*/
+    --colorblanco:#ECE7EB; /*var(--colorblanco)*/
+
+    --darkalphacolor: #3f3f3f54; /*var(--darkalphacolor)*/
+    --lightalphacolor: rgba(235, 235, 235, 0.342); /*var(--lightalphacolor)*/
+    --backgroundimage: url("../img/bg_img.webp");
+    --whitetext: #ffffff; /*var(--)*/
+    font-family: Tahoma; 
+    font-size: 20px;
+}
+/* ============================================== F00TER  =============================================  */
+footer{
+    width:100vw;
+    height:10vh;
+    background-color: var(--coloroscuro);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: var(--colorprincipal);
+}
