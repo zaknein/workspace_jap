@@ -18,8 +18,7 @@ main {
 .info-container div {
 	margin-top: 1.3vh;
 }
-.image-container {
-}
+
 .subtitle {
 	font-weight: bold;
 }
@@ -27,4 +26,9 @@ main {
 	border: 1px solid gray;
 	padding: 1vh 1vw;
 	margin-top: 1vh;
+}
+
+#quantity-box {
+	margin-left: 15.5vw;
+	
 }

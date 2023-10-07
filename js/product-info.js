@@ -18,6 +18,7 @@ let NOWTIME;
 let NOWDATE;
 let COMMENTID = 0;
 const storagedComments = localStorage.getItem('comment');
+let quantityBoxValue = 0
 /* ===========[Variables RadioBtn]================= */
 
 const STAR1 = document.getElementById("star1");
@@ -105,7 +106,6 @@ function showProduct() {
                 <img  src="${element}" class="d-block w-100" alt="...">
               </div>`
     }
-    console.log(carouselImages)
   }
   for (relatedprod of currentProduct.relatedProducts) {
     relatedproductloop += `
@@ -148,7 +148,11 @@ function showProduct() {
         <div>${currentProduct.category}</div>
         <div class="subtitle">Cantidad de Vendidos</div>
         <div>${currentProduct.soldCount}</div>
-        <input type="button" name="addToCart" id="addToCartBtn" value="Add to cart">
+        <div>
+          <div class="subtitle text-center">Cantidad a comprar</div>
+          <input onChange="quantityChange(event)" class="text-center" id="quantity-box" type="number" value="1" min="1" max="99"></input>
+        </div>
+        <input onClick="addToCart()" type="button" name="addToCart" id="addToCartBtn" value="Add to cart">
         </div> 
     </div>
     <div id="relatedproducts" class="image-container relatedproducts">
@@ -162,12 +166,56 @@ function showProduct() {
     `;
   CONTAINER.innerHTML = htmlContentToAppend;
 }
+/* =========================[Quantity Change on Cart]============================ */
+function quantityChange(e){
+  quantityBoxValue = e.target.valueAsNumber;
+}
+/* ==============================[ADD TO CART BUTTON]================================ */
+function addToCart() {
+  const CARTLIST = JSON.parse(localStorage.getItem('cartlist')) || [];
+  let iteminfo = {};
+  /* Verifica que no exista ya un artículo con misma ID*/
+  for (let i = 0; i < CARTLIST.length; i++){
+    if ( CARTLIST[i].id === currentProduct.id){
+      // Verifica que las cantidades sean correctas
+      if ( CARTLIST[i].quantity !== quantityBoxValue){
+        CARTLIST[i] = {
+          id: currentProduct.id,
+          imgsource: currentProduct.images[0],
+          name: currentProduct.name,
+          quantity: quantityBoxValue,
+          currency: currentProduct.currency,
+          cost: currentProduct.cost
+        }
+        localStorage.setItem('cartlist', JSON.stringify(CARTLIST));
+        alert('Cantidad actualizada correctamente')
+        return
+      } else {
+        console.log('No puedes agregar el mismo artículo nuevamente')
+        return
+      }
+      
+    }
+  }
+  /* Setea la información del artículo dentro del objeto */
+  iteminfo = {
+    id: currentProduct.id,
+    imgsource: currentProduct.images[0],
+    name: currentProduct.name,
+    quantity: quantityBoxValue,
+    currency: currentProduct.currency,
+    cost: currentProduct.cost
+  }
+  /* Prepara todo para mandarlo al LocalStorage */
+  CARTLIST.push(iteminfo);
+  localStorage.setItem('cartlist', JSON.stringify(CARTLIST));
+  alert('Artículo agregado con exito al carrito!');
+}
 
 /* ==============================[Show comment]================================ */
 
 function showComments(array) {
   const PRODID = currentProduct.id;
-  console.log(PRODID)
   let commentsToAppend = "";
   for (let i = 0; i < array.length; i++) {
     if (array[i].product == PRODID) {

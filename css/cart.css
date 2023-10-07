@@ -1,0 +1,21 @@
+#cart-container {
+    width: 50vw;
+    border: 1px solid black;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+}
+#cart-container h1 {
+    font-weight: bold;
+    margin: 2vh;
+}
+#cart-container h3{
+    text-align: left;
+    margin: 4vh;
+}
+.little-cart-item{
+    width: 100px;
+}
+.input-quantity{
+    width: 50px;
+    height: 50px;
+}

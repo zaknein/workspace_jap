@@ -37,6 +37,21 @@ async function fetchData(URL){
 
 fetchData(URL);
 
+// fetch(URL)
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//     DATOSABOUTUS = data.integrantes;
+//     console.log(DATOSABOUTUS);
+//   })
+//   .catch((error) => {
+//     console.error('There was a problem with the fetch operation:', error);
+//   });
+
 function displayData(name){
     for(element of DATOSABOUTUS){
         if(element.nombre === name){

@@ -2,13 +2,13 @@
     "integrantes": [
       {
         "nombre": "Axel Palombo",
-        "descripcion": "Desarrollador web con experiencia en diseño de sitios web responsivos y aplicaciones web interactivas.",
-        "experiencia": "Trabajó como desarrollador web en ABC Web Solutions durante 4 años. Desarrolló aplicaciones web para clientes de diversas industrias.",
+        "descripcion": "Desarrollador web con experiencia en resolución de problemas, toma de decisiones y liderazgo",
+        "experiencia": "Trabajé varios años como entrenador, consiguiendo así pulir mis habilidades de liderazgo, trabajo en equipo, toma de decisiones y cohesión de equipo",
         "imagen": "img/about-us-apalombo.png",
         "estudios": [
-          "Licenciatura en Informática en la Universidad XYZ",
-          "Curso de Diseño Web Avanzado en la Escuela de Diseño ABC",
-          "Certificado en Desarrollo Front-End en línea"
+          "Escuela Naval - Oficial de Marina Mercante",
+          "Cursos en FreeCodeCamp - HTML // CSS // JS // REACT",
+          "Jóvenes a Programar 2023 - Nivel 1 Completo"
         ]
       },
       {
