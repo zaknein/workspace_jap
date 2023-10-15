@@ -21,7 +21,7 @@ function showProductList() {
 	for (let i = 0; i < currentProductArray.products.length; i++) {
 		let product = currentProductArray.products[i];
 		htmlContentToAppend += `
-            <div onclick="setProductID(${product.id})" class="list-group-item list-group-item-action cursor-active product-container">
+            <div onclick="setProductID(${product.id})" class=" cursor-active product-container">
                 
                     
                         <img src="${product.image}" alt="${product.name}" class=" img">

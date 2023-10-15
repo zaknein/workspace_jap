@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>eMercado - Todo lo que busques está aquí</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- ================================ Stylesheets ====================================== -->
@@ -23,6 +26,7 @@
 </head>
 
 <body class="credManBody">
+      <!-- ==============================[Header]====================================== -->
   <nav>
     <div class="wrapper">
       <input type="checkbox" id="box">
@@ -42,11 +46,12 @@
           <li><a href="about-us.html">Nosotros</a></li>
         </ul>
       </div>
-      <img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner">
+      <a href="index.html"><img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner"></a>
     </div>
-  <!-- =============================== Dropdown =====================================  -->
+    <!-- =============================== Dropdown =====================================  -->
     <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
         Usuario
       </button>
       <div class="dropdown-menu" aria-labelledby="userDropdown">
@@ -66,6 +71,7 @@
     </div>
     <a class="nav-link" href="credential-manager.html" id="log-in">Iniciar Sesión</a>
   </nav>
+    <!-- ==============================[Presentacion de Pagina]====================================== -->
   <main>
     <div class="little-div"></div>
     <div class="container" id="cart-container">
@@ -73,34 +79,86 @@
 
       <h3>Artículos a comprar</h3>
       <div id="cart-list" class="container">
-        
+
       </div>
       <h5 class="mb-3">Tipo de Envio</h5>
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked=""
-                required="">
-              <label class="custom-control-label" for="goldradio">Gold (13%)</label>
+      <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+          <input id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked="" required="">
+          <label class="custom-control-label" for="goldradio">Gold (13%)</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="premiumradio" name="publicationType" type="radio" class="custom-control-input" required="">
+          <label class="custom-control-label" for="premiumradio">Premium (7%)</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="standardradio" name="publicationType" type="radio" class="custom-control-input" required="">
+          <label class="custom-control-label" for="standardradio">Estándar (3%)</label>
+        </div>
+      </div>
+      <h5 class="mb-3">Direccion de Envio</h5>
+      <div id="deliver-container">
+
+        <label class="c1" for="street">Calle</label>
+        <input class="c2" type="text" name="street" class="" id="street">
+
+
+        <label class="c1" for="housenumber">Número</label>
+        <input class="c2" type="text" name="housenumber" class="" id="housenumber">
+
+
+        <label class="c1" for="corner">Esquina</label>
+        <input class="c2" type="text" name="corner" class="" id="corner">
+
+      </div>
+  <!-- ==============================[Tabla de costos]====================================== -->
+      <div class="container text-center">
+        <div class="cost-containerBlack">
+          <div class="row text-start row-cols-2 cost-container"><h4>Costos</h4></div>
+          <!-- =========--===========[Costo Unitario]======================= -->
+          <div class="row row-cols-2 cost-container">
+            <div class="col">
+              <div class="row py-1 row-cols-1 text-start"><p class="costText">Sub Total</p></div>
+              <div class="row row-cols-1 text-start"><p class="costTextSmall">costo unitario del producto por cantidad</p></div>
             </div>
-            <div class="custom-control custom-radio">
-              <input id="premiumradio" name="publicationType" type="radio" class="custom-control-input" required="">
-              <label class="custom-control-label" for="premiumradio">Premium (7%)</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="standardradio" name="publicationType" type="radio" class="custom-control-input" required="">
-              <label class="custom-control-label" for="standardradio">Estándar (3%)</label>
+            <div class="col">
+              <div class="col text-end">U$D 000</div>
             </div>
           </div>
+
+          <div class="row row-cols-2 cost-container">
+            <div class="col">
+              <div class="row py-1 row-cols-1 text-start"><p class="costText">Costo de envio</p></div>
+              <div class="row row-cols-1 text-start"><p class="costTextSmall">Segun el tipo de envio</p></div>
+            </div>
+            <div class="col">
+              <div class="col text-end ">U$D 000</div>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 cost-container">
+            <div class="col">
+              <div class="row row-cols-1 text-start"><p>Total ($)</p></div>
+            </div>
+            <div class="col">
+              <div class="col text-end">U$D 000</div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+
+      <button id="buyBtn">Comprar</button>
     </div>
   </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
-    </div>
+  <!-- ==============================[footer]====================================== -->
+  <footer>
+    <p>
+      <a href="#">Volver arriba</a>
+    </p>
+    <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
   </footer>
+    <!-- ==============================[footer]====================================== -->
   <div id="spinner-wrapper">
     <div class="lds-ring">
       <div></div>

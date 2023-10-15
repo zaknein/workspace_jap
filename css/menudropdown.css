@@ -35,7 +35,7 @@ label #button i {
 
 .wrapper .navs {
     position: fixed;
-    top: 7vh; /* Mostrar el menú debajo del botón */
+    top: 40px; /* Mostrar el menú debajo del botón */
     transform: scaleY(0); /* Cambiar a scaleY para desplegar hacia abajo */
     transform-origin: top right;
     transition: transform .4s ease-in;
@@ -43,7 +43,7 @@ label #button i {
     background: var(--coloroscuro);
     left: 0;
     border-bottom-right-radius: 15px;
-    padding-top: 5vh;
+    padding-top: 45px;
     padding-left: 3vw;
 
 }
@@ -84,4 +84,14 @@ label #button i {
     font-weight: normal; /* Cambiar el peso de la fuente si lo deseas */
     position: absolute; /* Establece la posición absoluta */
     right: 8%;
+}
+@media(max-width: 680px){
+    #userDropdown{
+        width: 150px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    .wrapper .navs {
+        top:50px;
+    }
 }

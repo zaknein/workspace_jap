@@ -52,7 +52,7 @@
 
 /* Estilo para el menú desplegable en sí */
 .dropdown-menu {
-    background-color: var(--coloroscuro); /* Color de fondo del menú */
+    background-color: var(--coloroscuro) !important; /* Color de fondo del menú */
     border: none; /* Eliminar borde del menú */
     border-bottom-left-radius: 15px; /* Bordes redondeados del menú */
 }

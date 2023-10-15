@@ -60,7 +60,6 @@
     position: relative;
     height: 100%;
     z-index: 0;
-
 }
 .personLabel{
     transition: all .5s;
@@ -72,14 +71,12 @@
     position: relative;
     height: 40px;
     width: 1px;
-
     z-index: 0;
 }
 .connectionPoint{
     transition: all 1s;
     position: relative;
     height: 1px;
-
     left: 5%;
     width: 90%;
     z-index: 0;
@@ -126,3 +123,100 @@
     display: none;
 }
 
+
+@media (max-width: 1180px){
+    .personFaceBox:checked ~ .personFaceImage{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .personFaceImage{
+        clip-path: inset(0% 25%);
+        transform: translate(25%);
+        margin-left: -25%;
+        margin-right: -25%;
+    }
+    .personLabel{
+        clip-path: inset(0% 25%);
+        transform: translate(25%);
+        margin-left: -25%;
+        margin-right: -25%;
+    }
+    #personBtn{
+        width: 80%!important;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 10%!important;
+        margin-right: 10%!important;
+    }
+    #personBtnContainer{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%!important;
+        left: 5%;
+    }
+    #personContainer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        background-color: var(--darkalphacolor);
+    }
+    #personImage{
+        position: relative;
+        width: 70%;
+        height: auto!important;
+        left: 0%!important;
+    }
+    #separatorUI{
+        transition: all 0.5s;
+        margin: 5%;
+        position: relative;
+        height: 3px;
+        width: 80%;
+        background-color: var(--colorgris);
+    }
+    #infoContainerLeft{
+        transition: all 0.5s;
+        position: relative;
+        height: 40%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #infoContainerRight{
+        position: relative;
+        height: fit-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+    }
+    #aboutUsInfoContainer{
+        position: relative;
+        transition: all 0.5s;
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        text-shadow: 1px 5px 22px rgba(0,0,0,1);
+    }
+    #shadowAboutUs{
+        display: none;
+    }
+}

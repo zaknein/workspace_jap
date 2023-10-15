@@ -1,19 +1,19 @@
 const CONTAINER = document.getElementById('cart-list');
 const INFO = JSON.parse(localStorage.getItem('cartlist'));
 const QUANTITIES = document.getElementsByClassName('input-quantity');
+// Función para borrar Items del Carrito
 function DeleteCartItem(e) {
     const ITEMID = Number(e.target.getAttribute('cart-id'))
-    console.log(ITEMID)
     const NEWLSCARTLIST = [];
     for (let i = 0; i < INFO.length; i++) {
         if (!(INFO[i].id === ITEMID)) {
             NEWLSCARTLIST.push(INFO[i])
         }
     }
-    console.log(NEWLSCARTLIST);
     localStorage.setItem('cartlist', JSON.stringify(NEWLSCARTLIST));
     location.reload();
 }
+// Función para cambiar las cantidades de los Items en el Carrito Y calcular el nuevo Subtotal
 function QuantityChange(e) {
   // Agregar Item Quantity al LS y reimprimirlo continuamente
     for (let i = 0; i < INFO.length; i++){
@@ -28,6 +28,7 @@ function QuantityChange(e) {
     const subtotal = quantity * cost;
     row.querySelector('.subtotal').textContent = `${INFO[row.rowIndex - 1].currency} ${subtotal}`;
 }
+// Impresora de artículos en el Carrito
 function ShowCart() {
     let htmlContentToAppend = '';
     let cartitemrows = '';

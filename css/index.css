@@ -6,6 +6,7 @@
   }
 html{
     box-sizing: border-box;
+    
 }
 body{
     margin: 0 0;
@@ -13,13 +14,19 @@ body{
     color: var(--colorsecundario);
     overflow-x:hidden;
 }
+@media(max-width: 680px){
+    body{
+        width: 100vw;
+        min-width: 400px;
+    }
+
+}
 
 /* ======================================== PRESENTACION E-COMMERCE ======================================  */
 #presentation{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-
     width: 100%;
     background-color: var(--lightalphacolor);
 }
@@ -30,8 +37,8 @@ body{
     position:relative;
 }
 #presentation h1{
-    width:60vw;
-    height:auto;
+    width:80%;
+    height: 3em;
     font-size:5rem;
     text-align: center;
 }
@@ -66,6 +73,22 @@ body{
     background-color:var(--colorprincipal);
     color:var(--coloroscuro);
     border:var(--colorsecundario);
+}
+@media(max-width: 680px){
+    #presentation h1{
+        height: auto;
+        font-size:2.7rem;
+    }
+    #presentation p{
+        font-size: 1.3rem;
+
+    }
+    #btn-presentation{
+        width:150px;
+        height:30px;
+        font-size:1rem;
+
+    }
 }
 /* ======================================== DISPLAY MAIN INDEX ======================================  */
 #main-display{
@@ -125,4 +148,25 @@ body{
 }
 .carousel-caption{
     text-shadow: -5px 3px 4px rgba(0,0,0,1);
+}
+
+@media(max-width: 680px){
+    /* #carouselExampleCaptions{
+        height: 200px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    #carouselExampleCaptions {
+        height: 300px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img-carrusel {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
 }
