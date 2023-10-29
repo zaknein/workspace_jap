@@ -13,7 +13,7 @@ const FPASSWORD = document.getElementById("floatingPassword");
 const SPASSWORD = document.getElementById("floatingPassword2");
 const MESSAGE = parent.document.getElementById("message");
 const CHKBOX = document.getElementById("terms");
-
+// Vaciar todos los campos del registro
 function emptyfields(){
     USERNAME.value = "";
     FULLNAME.value = "";
@@ -23,6 +23,8 @@ function emptyfields(){
     MESSAGE.value = "";
     CHKBOX.checked = false;
 }
+// Vaciar todos los campos del registro
+// Verifica la validez de los campos rellenados
 function signUp() {
     MESSAGE.innerHTML = ""; // Limpiar el mensaje previo
 
@@ -52,8 +54,8 @@ function signUp() {
         }
     }
 }
-
-
+// Verifica la validez de los campos rellenados
+// Trae los campos del registro al js
 document.addEventListener("DOMContentLoaded", function(e) {
     /*Función de chequeo de datos previos al registro*/
     USERNAME.addEventListener("input", signUp);
@@ -63,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
     SPASSWORD.addEventListener("input", signUp);
     CHKBOX.addEventListener("change", signUp);
 });
-
-/*Ingreso de datos a la DataBase*/
+// Trae los campos del registro al js
+//Ingreso de datos a la DataBase
 BTTN.addEventListener("click",function(e){
     signUp();
     if (validation === true){
@@ -90,11 +92,14 @@ BTTN.addEventListener("click",function(e){
         alert("Debes completar todos los campos para registrarte");
     }
 })
-
+//Ingreso de datos a la DataBase
+// Funcionalidad para mostrar el PopUp de Términos y Condiciones
 function showPopup() {
     parent.document.getElementById("termsPopup").style.display = "block";
 }
-
+// Funcionalidad para mostrar el PopUp de Términos y Condiciones
+// Event Listener para ejecutar la función anterior cuando se clickee en el link
 document.getElementById("showTerms").addEventListener("click", () => {
     showPopup();
 });
+// Event Listener para ejecutar la función anterior cuando se clickee en el link

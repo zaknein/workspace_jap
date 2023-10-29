@@ -14,7 +14,7 @@ let showSpinner = function(){
 let hideSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "none";
 }
-
+// Función Fetch para hacer las Requests a las Api's
 let getJSONData = function(url){
     let result = {};
     showSpinner();
@@ -39,3 +39,4 @@ let getJSONData = function(url){
         return result;
     });
 }
+// Función Fetch para hacer las Requests a las Api's

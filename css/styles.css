@@ -342,7 +342,7 @@ footer p {
 
 main {
 	min-width: 400px;
-	min-height: calc(100vh - 210px);
+	min-height: calc(70vh - 210px);
 }
 
 a.custom-card,
@@ -510,7 +510,7 @@ a.custom-card:hover {
 }
 .MostrarBuscador {
 	width: 250px; /*lo hago mas grande */
-	opacity: 1; /*lo muesto */
+	opacity: 1; /*lo muestro */
 }
 
 .busno {

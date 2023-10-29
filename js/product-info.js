@@ -17,7 +17,7 @@ let NOWTIME;
 let NOWDATE;
 let COMMENTID = 0;
 const storagedComments = localStorage.getItem('comment');
-let quantityBoxValue = 0
+let quantityBoxValue = 1
 /* ===========[Variables RadioBtn]================= */
 
 const STAR1 = document.getElementById("star1");

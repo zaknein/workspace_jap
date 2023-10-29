@@ -73,83 +73,190 @@
   </nav>
     <!-- ==============================[Presentacion de Pagina]====================================== -->
   <main>
-    <div class="little-div"></div>
-    <div class="container" id="cart-container">
-      <h1> Carrito de Compras </h1>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="little-div"></div>
+      <div class="container" id="cart-container">
+        <h1> Carrito de Compras </h1>
 
-      <h3>Artículos a comprar</h3>
-      <div id="cart-list" class="container">
+        <h3>Artículos a comprar</h3>
+        <div id="cart-list" class="container">
 
-      </div>
-      <h5 class="mb-3">Tipo de Envio</h5>
-      <div class="d-block my-3">
-        <div class="custom-control custom-radio">
-          <input id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked="" required="">
-          <label class="custom-control-label" for="goldradio">Gold (13%)</label>
         </div>
-        <div class="custom-control custom-radio">
-          <input id="premiumradio" name="publicationType" type="radio" class="custom-control-input" required="">
-          <label class="custom-control-label" for="premiumradio">Premium (7%)</label>
+        <h5 class="mb-3">Tipo de Envio</h5>
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input onclick="ChangeCostoEnvio()" id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked="" required="">
+            <label class="custom-control-label" for="goldradio">Gold (13%)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input onclick="ChangeCostoEnvio()" id="premiumradio" name="publicationType" type="radio" class="custom-control-input" required="">
+            <label class="custom-control-label" for="premiumradio">Premium (7%)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input onclick="ChangeCostoEnvio()" id="standardradio" name="publicationType" type="radio" class="custom-control-input" required="">
+            <label class="custom-control-label" for="standardradio">Estándar (3%)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio">
-          <input id="standardradio" name="publicationType" type="radio" class="custom-control-input" required="">
-          <label class="custom-control-label" for="standardradio">Estándar (3%)</label>
-        </div>
-      </div>
-      <h5 class="mb-3">Direccion de Envio</h5>
-      <div id="deliver-container">
-
-        <label class="c1" for="street">Calle</label>
-        <input class="c2" type="text" name="street" class="" id="street">
-
-
-        <label class="c1" for="housenumber">Número</label>
-        <input class="c2" type="text" name="housenumber" class="" id="housenumber">
-
-
-        <label class="c1" for="corner">Esquina</label>
-        <input class="c2" type="text" name="corner" class="" id="corner">
-
-      </div>
-  <!-- ==============================[Tabla de costos]====================================== -->
-      <div class="container text-center">
-        <div class="cost-containerBlack">
-          <div class="row text-start row-cols-2 cost-container"><h4>Costos</h4></div>
-          <!-- =========--===========[Costo Unitario]======================= -->
-          <div class="row row-cols-2 cost-container">
-            <div class="col">
-              <div class="row py-1 row-cols-1 text-start"><p class="costText">Sub Total</p></div>
-              <div class="row row-cols-1 text-start"><p class="costTextSmall">costo unitario del producto por cantidad</p></div>
+        <h5 class="mb-3">Direccion de Envio</h5>
+        <div id="deliver-container">
+          <div class="mb-3">
+            <label class="c1" for="street">Calle</label>
+            <input class="col-md-6" type="text" name="street" class="" id="street" required>
+            <div class="valid-feedback">
+              Correcto!
             </div>
-            <div class="col">
-              <div class="col text-end">U$D 000</div>
+            <div class="invalid-feedback">
+              Ingresar calle!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="c1" for="housenumber">Número</label>
+            <input class="col-md-6" type="text" name="housenumber" class="" id="housenumber" required>
+            <div class="valid-feedback">
+              Correcto!
+            </div>
+            <div class="invalid-feedback">
+              Ingresar Número!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="c1" for="corner">Esquina</label>
+            <input class="col-md-6" type="text" name="corner" class="" id="corner" required>
+            <div class="valid-feedback">
+              Correcto!
+            </div>
+            <div class="invalid-feedback">
+              Ingrese esquina!
             </div>
           </div>
 
-          <div class="row row-cols-2 cost-container">
-            <div class="col">
-              <div class="row py-1 row-cols-1 text-start"><p class="costText">Costo de envio</p></div>
-              <div class="row row-cols-1 text-start"><p class="costTextSmall">Segun el tipo de envio</p></div>
+
+
+
+        </div>
+    <!-- ==============================[Tabla de costos]====================================== -->
+        <div class="container text-center">
+          <div class="cost-containerBlack">
+            <div class="row text-start row-cols-2 cost-container"><h4>Costos</h4></div>
+            <!-- =========--===========[Costo Unitario]======================= -->
+            <div class="row row-cols-2 cost-container">
+              <div class="col">
+                <div class="row py-1 row-cols-1 text-start"><p class="costText">Sub Total</p></div>
+                <div class="row row-cols-1 text-start"><p class="costTextSmall">costo unitario del producto por cantidad</p></div>
+              </div>
+              <div class="col">
+                <div class="col text-end" id="Total-Productos">U$D 000</div>
+              </div>
             </div>
-            <div class="col">
-              <div class="col text-end ">U$D 000</div>
+
+            <div class="row row-cols-2 cost-container">
+              <div class="col">
+                <div class="row py-1 row-cols-1 text-start"><p class="costText">Costo de envio</p></div>
+                <div class="row row-cols-1 text-start"><p class="costTextSmall">Segun el tipo de envio</p></div>
+              </div>
+              <div class="col">
+                <div class="col text-end " id="CostoEnvio">U$D 000</div>
+              </div>
+            </div>
+
+            <div class="row row-cols-2 cost-container">
+              <div class="col">
+                <div class="row row-cols-1 text-start" ><p>Total ($)</p></div>
+              </div>
+              <div class="col">
+                <div class="col text-end" id="Total">U$D 000</div>
+              </div> 
+            </div>
+
+    <!-- ==============================[informacion de pago]====================================== -->
+
+            <div class="row cost-container">
+              <div class="col">
+                <div class="row row-cols-1 text-start"><p>Seleccione Metodo de pago</p></div>
+
+                <div class="row row-cols-1 text-start">
+
+                  <div class="generalInfoContainer">
+            <!-- =========--===========[botones]======================= -->
+                  <div>
+                    <p class="d-inline-flex gap-1">
+                      <a class="btn btn-primary transformationBtn active" data-bs-toggle="collapse" href="#mastercard" role="button" aria-expanded="false" aria-controls="mastercard" id="mastercardBtn">
+                        <img src="img\mastercard-icon.png" alt="mastercard-icon" class="paymethodIcons">
+                      </a>
+
+                      <a class="btn btn-primary transformationBtn" data-bs-toggle="collapse" href="#visa" role="button" aria-expanded="false" aria-controls="visa" id="visaBtn">
+                        <img src="img\visa-Icon.png" alt="visa-icon" class="paymethodIcons">
+                      </a>
+
+                      <a class="btn btn-primary transformationBtn" data-bs-toggle="collapse" href="#maestro" role="button" aria-expanded="false" aria-controls="maestro" id="maestroBtn">
+                        <img src="img\maestro-icon.png" alt="maestro-icon" class="paymethodIcons">
+                      </a>
+
+                      <a class="btn btn-primary transformationBtn" data-bs-toggle="collapse" href="#paypal" role="button" aria-expanded="false" aria-controls="paypal" id="paypalBtn">
+                        <img src="img\paypal-icon.png" alt="paypal-icon" class="paymethodIcons">
+                      </a>
+                    </p>
+            <!-- =========--===========[cuadros de informacion]======================= -->
+                  <div id="methodInfoContainer">
+                    <!-- ============[MasterCard]============== -->
+                    <div id="mastercard">
+                      <div class="row g-3">
+                        <div class="col-12">
+                          <label for="masterinputCardNumber" class="form-label">Nro de Tarjeta</label>
+                          <input type="text" class="form-control" id="masterinputCardNumber" placeholder="xxxx-xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required>
+                          <div class="valid-feedback">
+                            Valido!
+                          </div>
+                          <div class="invalid-feedback">
+                            Ingrese Nro de Tarjeta
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="masterinputName" class="form-label">Nombre del titular</label>
+                          <input type="text" class="form-control mb-0" id="masterinputName" required>
+                          <div class="valid-feedback">
+                            Valido!
+                          </div>
+                          <div class="invalid-feedback">
+                            Nombre de titular
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="masterExplirationDate" class="form-label">Fecha de Expiracion</label>
+                          <input type="month" class="form-control" min="2022-12" max="2099-12" id="masterExplirationDate" required>
+                          <div class="valid-feedback">
+                            Valido!
+                          </div>
+                          <div class="invalid-feedback">
+                            Ingrese fecha
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="masterCVC" class="form-label">CVC</label>
+                          <input type="password" class="form-control" id="masterCVC" required>
+                          <div class="valid-feedback">
+                            Valido!
+                          </div>
+                          <div class="invalid-feedback">
+                            Ingrese CVC
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- =========--===========[fin del contenido del cuadro]======================= -->
+                  </div>
+                </div>
+                </div>
+
+              </div>
             </div>
           </div>
-
-          <div class="row row-cols-2 cost-container">
-            <div class="col">
-              <div class="row row-cols-1 text-start"><p>Total ($)</p></div>
-            </div>
-            <div class="col">
-              <div class="col text-end">U$D 000</div>
-            </div>
         </div>
 
-        </div>
+        <button id="buyBtn">Comprar</button>
       </div>
-
-      <button id="buyBtn">Comprar</button>
-    </div>
+    </form>
   </main>
   <!-- ==============================[footer]====================================== -->
   <footer>
@@ -167,6 +274,9 @@
       <div></div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/cart.js"></script>

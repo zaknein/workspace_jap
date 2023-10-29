@@ -1,8 +1,10 @@
-// Leer cookies
-let logued_in = false
+let logued_in = false // Se declara la variable que trackea si el usuario está logueado
+// Se traen los elementos del HTML
 const LOGOUT = document.getElementById("log-out-btn");
 const DROPDOWN = document.getElementById('userDropdown')
 const LOGIN = document.getElementById('log-in');
+// Se traen los elementos del HTML
+// Función que verifica si el usuario está logueado en la página
 document.addEventListener("DOMContentLoaded", function(e) {
     // Obtener variable logued_in almacenada en cookie
     const storedlogued_in = localStorage.getItem("loguedIn");
@@ -37,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         console.log("No hay información guardada");
     }
 });
-
+// Función que verifica si el usuario está logueado en la página
+// Cerrar Sesión - Vacía el LocalStorage y vuelve la variable a false
 function logout(){
     logued_in = false;
     localStorage.removeItem("loguedIn");
@@ -48,4 +51,5 @@ function logout(){
     window.location.reload()
     ,1500});
 }
-LOGOUT.addEventListener("click",logout);
+// Cerrar Sesión - Vacía el LocalStorage y vuelve la variable a false
+LOGOUT.addEventListener("click",logout); // EventListener para cerrar sesión

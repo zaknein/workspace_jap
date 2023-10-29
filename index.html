@@ -18,8 +18,8 @@
   <link rel="stylesheet" href="css/divs-design.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/darkmode.css">
-
-  <!-- ================================ Stylesheets ====================================== -->
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/popup-welcome.css">
   <link rel="icon" type="image/x-icon" href="img\favicon.ico">
   <script src="https://kit.fontawesome.com/e6f78feb22.js" crossorigin="anonymous"></script>
 </head>
@@ -82,50 +82,110 @@
     </div>
   </section>
   <div class="medium-div"></div>
+</div>
+
+<!-- =============================== POPUP DE BIEVENIDA =====================================  -->
+<div class="popup" id="termsPopup">
+ <div class="popup-content">
+  <div class="logotype">
+    <img src="../img/login.png" id="logo_commerce" alt="logo_commerce">
+  </div>
+     <h2 id="titulo">¡Bienvenido a E-Commerce!</h2>
+     <p id="terminos">
+      <br>
+      Descubre una amplia gama de productos y servicios de alta calidad. Encuentra las mejores ofertas y oportunidades de compra y venta en un solo lugar.
+      <br>
+      <br>
+      Explora nuestra selección, compra con confianza y vende tus productos de manera segura. En E-Commerce, hacemos que la experiencia de comprar y vender sea fácil y emocionante.
+      <br>
+      <br>
+      ¿Estás buscando algo en particular? Usa nuestra barra de búsqueda para encontrar exactamente lo que necesitas. Y si eres un vendedor, ¡publica tus productos y llega a una audiencia global!
+      <br>
+      <br>
+      Gracias por unirte a nuestra comunidad. Estamos aquí para ayudarte en cada paso del camino. ¡Felices compras y ventas!</p>
+      <div>
+       <button id="button-close"onclick="closePopup()">Cerrar</button>
+       <br> 
+       <input type="checkbox" id="no-mostrar">No volver a mostrar
+      </div>  
+ </div>
+</div>
+
   <!-- =============================== SECCION PRINCIPAL ======================================= -->
   <main id="main-display">
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div id="cars" class="carousel-item active">
-          <img src="img/cars_index.jpg" class="d-block w-100 img-carrusel" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h3 id="carrusel-texth3" class="carrusel-text">Autos</h3>
-            <p class="carrusel-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
-          </div>
-        </div>
-        <div id="toys" class="carousel-item">
-          <img src="img/toys_index.jpg" class="d-block w-100 img-carrusel" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h3 id="carrusel-texth3" class="carrusel-text">Juguetes</h3>
-            <p class="carrusel-text">Encuentra aquí los mejores precios para niños/as de cualquier edad.</p>
-          </div>
-        </div>
-        <div id="furniture" class="carousel-item">
-          <img src="img/furniture_index.jpg" class="d-block w-100 img-carrusel" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h3 id="carrusel-texth3" class="carrusel-text">Muebles</h3>
-            <p class="carrusel-text">Muebles antiguos, nuevos y para ser armados por uno mismo.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div id="gallery-container">
+      <h1 id="gallery-message">¡Selecciona una de las categorías!</h1>
+      <section class="gallery">
+        <article class="card" id="cars">
+            <figure>
+                <img
+                    src="img/cars_index.jpg"
+                    alt="Car-category"
+                    title="Cars"
+                />
+            </figure>
+        </article>
+        <article class="card" id="toys">
+            <figure>
+                <img
+                    src="img/toys_index.jpg"
+                    alt="Toys-category"
+                    title="Toys"
+                />
+            </figure>
+        </article>
+        <article class="card" id="furniture">
+            <figure>
+                <img
+                    src="img/furniture_index.jpg"
+                    alt="Furniture-category"
+                    title="Furniture"
+                />
+            </figure>
+        </article>
+        <article class="card" id="tools">
+                <img
+                    src="img/cat104_1.jpg"
+                    alt="Tools-category"
+                    title="Tools"
+                />
+        </article>
+        <article class="card" id="computers">
+                <img
+                    src="img/cat105_1.jpg"
+                    alt="Computer-category"
+                    title="Computers"
+                />
+        </article>
+        <article class="card" id="clothes">
+                <img
+                    src="img/cat106_1.jpg"
+                    alt="Clothes-category"
+                    title="Clothes"
+                />
+        </article>
+        <article class="card" id="electrodomestics">
+                <img
+                    src="img/cat107_1.jpg"
+                    alt="Electrodomestic-category"
+                    title="Electrodomestics"
+                />
+        </article>
+        <article class="card" id="sports">
+                <img
+                    src="img/cat108_1.jpg"
+                    alt="Sports-category"
+                    title="Sports"
+                />
+        </article>
+        <article class="card" id="cellphones">
+                <img
+                    src="img/cat109_1.jpg"
+                    alt="Cellphones-category"
+                    title="Cellphones"
+                />
+        </article>      
+      </section>
     </div>
   </main>
   <!-- ============================================== F00TER ===================================== -->
@@ -142,6 +202,7 @@
   <script src="js/darktheme.js"></script>
   <script src="js/init.js"></script>
   <script src="js/cookies.js"></script>
+  <script src="js/"></script>
 </body>
 
 </html>

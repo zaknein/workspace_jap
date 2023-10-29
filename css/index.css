@@ -92,11 +92,32 @@ body{
 }
 /* ======================================== DISPLAY MAIN INDEX ======================================  */
 #main-display{
-    display:none;
+    display:none;    
+}
+#gallery-container{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gallery-message {
+    width: 90vw;
+    position: absolute;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 4rem;
+    top: -15vh;
+    left: 5vw;
+    transition: all 1s;
 }
 #category-container{
     display:flex;
     flex-direction: column;
+    position: static;
 }
 #muchmore{
 

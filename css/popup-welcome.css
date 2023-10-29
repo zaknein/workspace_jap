@@ -1,0 +1,72 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.584);
+    text-align: center;
+}
+
+.popup-content {
+    background-color: rgba(33, 36, 43, 0.899);
+    width: 700px;
+    max-width: 70%;
+    height: 35rem;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#titulo {
+    color: white;
+}
+#terminos {
+    position: relative;
+    resize: none;
+    height: 55%;
+    overflow: auto;
+    text-align: center;
+    color: white;
+}
+#button-close {
+    background-color: #1b1b1b; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 6px 12px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    width: 70%;
+}
+#terminos::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  /* Mango (scroll thumb) */
+#terminos::-webkit-scrollbar-thumb {
+    background-color: #919191;
+    border-radius: 5px;
+  }
+  
+ 
+#terminos::-webkit-scrollbar-track {
+    background-color: #41000000;
+  }
+#button-close:hover {
+    background-color: #5261b6;
+   /*  background-color: rgb(133, 133, 133);*/ 
+}
+#no-mostrar{
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+#logo_commerce  {
+    height: 7rem;
+}
+div {
+    color: #5261b6;
+}

@@ -1,3 +1,5 @@
+// Funcionalidades de Sort / Ascendente - Descendente - Mayor a Menor /
+// Traemos los botones
 const ORDER_ASC_BY_NAME = "AZ";
 const ORDER_DESC_BY_NAME = "ZA";
 const ORDER_BY_PROD_COUNT = "Cant.";
@@ -34,12 +36,14 @@ function sortCategories(criteria, array){
 
     return result;
 }
-
+// Funcionalidades de Sort / Ascendente - Descendente - Mayor a Menor /
+// Selección de categoría, llevamos la ID al LocalStorage
 function setCatID(id) {
     localStorage.setItem("catID", id);
     window.location = "products.html"
 }
-
+// Selección de categoría, llevamos la ID al LocalStorage
+// Impresora de categorías - Muestra el listado de categorías
 function showCategoriesList(){
 
     let htmlContentToAppend = "";
@@ -70,7 +74,8 @@ function showCategoriesList(){
         document.getElementById("cat-list-container").innerHTML = htmlContentToAppend;
     }
 }
-
+// Impresora de categorías - Muestra el listado de categorías
+// Funcionalidades de Filtrado y Ordenamiento
 function sortAndShowCategories(sortCriteria, categoriesArray){
     currentSortCriteria = sortCriteria;
 
@@ -83,10 +88,8 @@ function sortAndShowCategories(sortCriteria, categoriesArray){
     //Muestro las categorías ordenadas
     showCategoriesList();
 }
-
-//Función que se ejecuta una vez que se haya lanzado el evento de
-//que el documento se encuentra cargado, es decir, se encuentran todos los
-//elementos HTML presentes.
+// Funcionalidades de Filtrado y Ordenamiento
+// Cuando carga el contenido se ejecuta la función Fetch y funciones de filtrado y ordenamiento
 document.addEventListener("DOMContentLoaded", function(e){
     getJSONData(CATEGORIES_URL).then(function(resultObj){
         if (resultObj.status === "ok"){
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             //sortAndShowCategories(ORDER_ASC_BY_NAME, resultObj.data);
         }
     });
-
+// Event Listeners para los botones de filtrado
     document.getElementById("sortAsc").addEventListener("click", function(){
         sortAndShowCategories(ORDER_ASC_BY_NAME);
     });
@@ -141,3 +144,5 @@ document.addEventListener("DOMContentLoaded", function(e){
         showCategoriesList();
     });
 });
+// Event Listeners para los botones de filtrado
+// Cuando carga el contenido se ejecuta la función Fetch y funciones de filtrado y ordenamiento
