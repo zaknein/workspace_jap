@@ -89,6 +89,7 @@ body{
         font-size:1rem;
 
     }
+    
 }
 /* ======================================== DISPLAY MAIN INDEX ======================================  */
 #main-display{
@@ -101,19 +102,28 @@ body{
     justify-content: center;
     align-items: center;
 }
-#gallery-message {
+#gallery-message, .gallery-subtitle {
     width: 90vw;
     position: absolute;
     margin-right:auto;
     margin-left:auto;
     text-align: center;
-    color: black;
+    color: var(--colorprincipal);
     font-weight: 500;
     font-size: 4rem;
     top: -15vh;
     left: 5vw;
     transition: all 1s;
 }
+@media (max-width: 400px){
+    #gallery-message, .gallery-subtitle{
+        font-size: 2rem;
+    }
+}
+.gallery-subtitle{
+    display: none;
+}
+
 #category-container{
     display:flex;
     flex-direction: column;
@@ -154,40 +164,4 @@ body{
     border-radius:10px;
     box-shadow: 3px 3px var(--colorsecundario);
     margin-top:1vh;
-}
-
-/*  ============================================ CARRUSEL ==========================================  */ 
-.img-carrusel{
-    border-radius: 15px;
-}
-
-#carouselExampleCaptions{
-    height: 450px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.carousel-caption{
-    text-shadow: -5px 3px 4px rgba(0,0,0,1);
-}
-
-@media(max-width: 680px){
-    /* #carouselExampleCaptions{
-        height: 200px;
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-    #carouselExampleCaptions {
-        height: 300px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .img-carrusel {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-
 }

@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70304,
+      "score": 5,
+      "description": "Este balón de fútbol es de alta calidad y proporciona un buen control. Es perfecto para partidos y entrenamientos.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 19:15:32"
+    },
+    {
+      "product": 70304,
+      "score": 4,
+      "description": "La calidad de este balón es sorprendente. La superficie es resistente y los rebotes son consistentes.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 19:30:18"
+    },
+    {
+      "product": 70304,
+      "score": 5,
+      "description": "El balón de fútbol es versátil y se adapta a diferentes tipos de juego. Me ha ayudado a mejorar mis habilidades en el campo.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 19:45:59"
+    },
+    {
+      "product": 70304,
+      "score": 4,
+      "description": "La durabilidad y el diseño de este balón son notables. Lo he utilizado en numerosos partidos y sigue en excelente estado.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 20:00:42"
+    },
+    {
+      "product": 70304,
+      "score": 4,
+      "description": "Este balón de fútbol es esencial para cualquier aficionado al deporte. La calidad y la sensación en el campo son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 20:15:21"
+    }
+  ]
+  

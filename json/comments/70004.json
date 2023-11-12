@@ -1,0 +1,37 @@
+[
+    {
+        "product": 70004,
+        "score": 5,
+        "description": "La llave ajustable es una herramienta esencial en mi caja de herramientas. Su versatilidad la hace indispensable.",
+        "user": "lucas_rodriguez",
+        "dateTime": "2023-11-05 13:15:32"
+    },
+    {
+        "product": 70004,
+        "score": 4,
+        "description": "La calidad de construcción de esta llave ajustable es impresionante. Es resistente y duradera.",
+        "user": "sara_gutierrez",
+        "dateTime": "2023-11-05 13:30:18"
+    },
+    {
+        "product": 70004,
+        "score": 5,
+        "description": "La llave ajustable es fácil de usar y muy eficiente. La he utilizado en una variedad de tareas de reparación.",
+        "user": "javier_martinez",
+        "dateTime": "2023-11-05 13:45:59"
+    },
+    {
+        "product": 70004,
+        "score": 4,
+        "description": "La versatilidad de esta llave es impresionante. Puedo ajustarla a diferentes tamaños de tuercas y pernos.",
+        "user": "maria_lopez",
+        "dateTime": "2023-11-05 14:00:42"
+    },
+    {
+        "product": 70004,
+        "score": 4,
+        "description": "Esta llave ajustable ha sido confiable en cada proyecto de reparación. La calidad es notable.",
+        "user": "daniel_gomez",
+        "dateTime": "2023-11-05 14:15:21"
+    }
+]

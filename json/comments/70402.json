@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70402,
+      "score": 5,
+      "description": "El Google Pixel 7 es una maravilla de la tecnología. La cámara es espectacular y la velocidad de procesamiento es sorprendente.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-07 01:15:32"
+    },
+    {
+      "product": 70402,
+      "score": 4,
+      "description": "La calidad de la pantalla de este Google Pixel es excepcional. Los colores son vibrantes y la resolución es nítida.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-07 01:30:18"
+    },
+    {
+      "product": 70402,
+      "score": 5,
+      "description": "El Google Pixel 7 es versátil y tiene muchas características útiles. Me ha simplificado la vida en muchas formas.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-07 01:45:59"
+    },
+    {
+      "product": 70402,
+      "score": 4,
+      "description": "La duración de la batería de este Google Pixel es destacable. Puedo usarlo todo el día sin preocuparme por quedarme sin energía.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-07 02:00:42"
+    },
+    {
+      "product": 70402,
+      "score": 4,
+      "description": "El Google Pixel 7 es una inversión que vale la pena. La calidad y el rendimiento son excepcionales.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-07 02:15:21"
+    }
+  ]
+  

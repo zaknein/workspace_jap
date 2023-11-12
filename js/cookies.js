@@ -4,6 +4,33 @@ const LOGOUT = document.getElementById("log-out-btn");
 const DROPDOWN = document.getElementById('userDropdown')
 const LOGIN = document.getElementById('log-in');
 // Se traen los elementos del HTML
+// Setter de tema // Cambia las variables en el Root según el tema preferido
+const DARKMODE = document.getElementById('toggle');
+DARKMODE.addEventListener('change', (e) => {
+    const DARKMODE = document.getElementById('toggle');
+    if (DARKMODE.checked) {
+        /* aqui van los estilos del modo claro */
+        localStorage.setItem('theme', "light");
+        root.style.setProperty('--coloroscuro', '#b5b5db');
+        root.style.setProperty('--backgroundimage', 'url("../img/bg_img_light.webp")');
+    } else {
+        localStorage.setItem('theme', "dark");
+        root.style.setProperty('--coloroscuro', '#22222B');
+        root.style.setProperty('--backgroundimage', 'url("../img/bg_img.webp")');
+
+    }
+    location.reload();
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    let theme = localStorage.getItem('theme');
+    if (theme == "light") {
+        DARKMODE.checked = true;
+    } else if (theme == "dark") {
+        DARKMODE.checked = false;
+    }
+})
+// Setter de tema // Cambia las variables en el Root según el tema preferido
 // Función que verifica si el usuario está logueado en la página
 document.addEventListener("DOMContentLoaded", function(e) {
     // Obtener variable logued_in almacenada en cookie

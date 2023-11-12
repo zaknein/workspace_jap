@@ -1,0 +1,38 @@
+[
+    {
+      "product": 40281,
+      "score": 5,
+      "description": "Esta computadora de escritorio ha sido una inversión increíble para mi trabajo. ¡Rápida y confiable!",
+      "user": "ana_martinez",
+      "dateTime": "2023-11-04 09:15:32"
+    },
+    {
+      "product": 40281,
+      "score": 4,
+      "description": "La computadora de escritorio es muy potente, lo que la hace perfecta para jugar a videojuegos de alta gama.",
+      "user": "carlos_gonzalez",
+      "dateTime": "2023-11-04 09:30:18"
+    },
+    {
+      "product": 40281,
+      "score": 5,
+      "description": "Estoy impresionado con el rendimiento de esta computadora. Maneja múltiples tareas sin problemas.",
+      "user": "laura_perez",
+      "dateTime": "2023-11-04 09:45:59"
+    },
+    {
+      "product": 40281,
+      "score": 4,
+      "description": "Es una excelente opción para tareas de oficina. La velocidad de procesamiento es asombrosa.",
+      "user": "david_rodriguez",
+      "dateTime": "2023-11-04 10:00:42"
+    },
+    {
+      "product": 40281,
+      "score": 4,
+      "description": "La calidad de construcción de esta computadora es excepcional. Estoy muy satisfecho con mi compra.",
+      "user": "maria_sanchez",
+      "dateTime": "2023-11-04 10:15:21"
+    }
+  ]
+  

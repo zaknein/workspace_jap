@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70300,
+      "score": 5,
+      "description": "Esta camiseta de fútbol es de alta calidad y cómoda de usar. Me siento como un verdadero fan cuando la llevo puesta.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 11:15:32"
+    },
+    {
+      "product": 70300,
+      "score": 4,
+      "description": "La camiseta es resistente y se mantiene en buen estado incluso después de varios partidos. La tela es transpirable.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 11:30:18"
+    },
+    {
+      "product": 70300,
+      "score": 5,
+      "description": "La camiseta de fútbol tiene un diseño auténtico y me hace sentir parte de mi equipo favorito. La recomiendo a todos los fanáticos.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 11:45:59"
+    },
+    {
+      "product": 70300,
+      "score": 4,
+      "description": "La comodidad y la calidad de esta camiseta son notables. La he usado en partidos y es perfecta para animar al equipo.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 12:00:42"
+    },
+    {
+      "product": 70300,
+      "score": 4,
+      "description": "Esta camiseta de fútbol es imprescindible para cualquier aficionado. La calidad y el diseño son excepcionales.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 12:15:21"
+    }
+  ]
+  

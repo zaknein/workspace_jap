@@ -1,0 +1,60 @@
+{
+    "catID": 105,
+    "catName": "Computadoras",
+    "products": [
+        {
+            "id": 40281,
+            "name": "Computadora de escritorio",
+            "description": "Computadora de escritorio. Potencia y rendimiento, para juegos o trabajo",
+            "cost": 2599,
+            "currency": "USD",
+            "soldCount": 11,
+            "image": "img/prod40281_1.jpg"
+        },
+        {
+            "id": 40282,
+            "name": "Laptop ASUS",
+            "description": "Laptop ASUS con procesador de última generación y pantalla Full HD.",
+            "cost": 800,
+            "currency": "USD",
+            "soldCount": 50,
+            "image": "../img/img-json/asus01.jpg"
+        },
+        {
+            "id": 40283,
+            "name": "PC de escritorio HP",
+            "description": "PC de escritorio HP con potente rendimiento y amplio almacenamiento.",
+            "cost": 1000,
+            "currency": "USD",
+            "soldCount": 75,
+            "image": "../img/img-json/hp1.jpg"
+        },
+        {
+            "id": 40284,
+            "name": "Monitor LG 4K",
+            "description": "Monitor LG 4K con colores vibrantes y alta resolución para una experiencia visual inmersiva.",
+            "cost": 400,
+            "currency": "USD",
+            "soldCount": 30,
+            "image": "../img/img-json/monitor01.jpg"
+        },
+        {
+            "id": 40285,
+            "name": "Teclado mecánico Corsair",
+            "description": "Teclado mecánico Corsair con retroiluminación RGB y switches Cherry MX.",
+            "cost": 150,
+            "currency": "USD",
+            "soldCount": 40,
+            "image": "../img/img-json/teclado01.jpg"
+        },
+        {
+            "id": 40286,
+            "name": "Mouse inalámbrico Logitech",
+            "description": "Mouse inalámbrico Logitech con seguimiento de alta precisión y diseño ergonómico.",
+            "cost": 60,
+            "currency": "USD",
+            "soldCount": 60,
+            "image": "../img/img-json/mouse01.jpg"
+        }
+    ]
+}

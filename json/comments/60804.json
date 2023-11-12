@@ -1,0 +1,37 @@
+[
+    {
+        "product": 60804,
+        "score": 5,
+        "description": "La mesa de centro es el complemento perfecto para mi sala de estar. Su diseño es elegante y funcional.",
+        "user": "lucas_martinez",
+        "dateTime": "2023-11-05 03:15:32"
+    },
+    {
+        "product": 60804,
+        "score": 4,
+        "description": "La calidad de esta mesa de centro es sorprendente. Está construida para durar y se ve genial en mi hogar.",
+        "user": "sara_perez",
+        "dateTime": "2023-11-05 03:30:18"
+    },
+    {
+        "product": 60804,
+        "score": 5,
+        "description": "La mesa de centro es versátil y útil. Puedo usarla para apoyar mis pies o colocar bebidas y aperitivos.",
+        "user": "javier_gomez",
+        "dateTime": "2023-11-05 03:45:59"
+    },
+    {
+        "product": 60804,
+        "score": 4,
+        "description": "La mesa de centro ha mejorado mi sala de estar. Es el centro de atención y ha transformado el espacio.",
+        "user": "maria_hernandez",
+        "dateTime": "2023-11-05 04:00:42"
+    },
+    {
+        "product": 60804,
+        "score": 4,
+        "description": "Esta mesa de centro es perfecta para relajarse con una taza de café. La recomendaría a mis amigos.",
+        "user": "daniel_gonzalez",
+        "dateTime": "2023-11-05 04:15:21"
+    }
+]

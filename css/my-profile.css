@@ -1,13 +1,12 @@
 body{
+    width:100%;
     color: #1a202c;
     text-align: left;
-    background-image: url(../img/bg_img.png);   
+    background-image: url(--backgroundimage1);   
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main-body {
-    padding: 15px;
-}
+
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
@@ -83,7 +82,7 @@ h6, small, hr, h4{
 }
 
 #description:hover {
-    border-color: #ffffff;
+    border-color: #6177d8;
 }
 #buttonsDescription {
     padding-top: 10px;
@@ -91,9 +90,8 @@ h6, small, hr, h4{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
 }
-
 .progress-bar {
-    background-color: rgba(1, 1, 1, 0.913);
+    background-color: #6177d8;
 }
 
 .btn {
@@ -111,8 +109,52 @@ h6, small, hr, h4{
 }
 .btn.btn-info:hover {
     color: #ffffff;
-    background-color: black;
+    background-color: #6177d8;
 }
 
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6177d8;
+  }
+input[type="text"]:hover,
+input[type="number"]:hover {
+      outline: none;
+      box-shadow: 0 0  30px #6177d8;
+    }
 
-
+#profile-image {
+    margin-bottom: 10px;
+    max-height: 25rem;
+    max-width: 25rem;
+    clip-path: circle(50% at 50% 50%);
+}
+#tw,#ig, #facebook, #website, #github {
+    color: #494949; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif; 
+    transition: color 0.3s
+}
+  
+#tw:hover ,#ig:hover, #facebook:hover, #website:hover, #github:hover  {
+    color: #6177d8;
+    transition: color 0.4s;
+}
+.text-muted {
+    size: 199;
+}

@@ -1,0 +1,27 @@
+{
+    "id": 70300,
+    "name": "Camiseta de fútbol",
+    "description": "Camiseta de fútbol de tu equipo favorito con los colores y el escudo.",
+    "cost": 30,
+    "currency": "USD",
+    "soldCount": 50,
+    "category": "Indumentaria deportiva",
+    "images": [
+        "../img/img-json/remerafut01.jpg",
+        "../img/img-json/remerafut02.jpg",
+        "../img/img-json/remerafut03.jpg",
+        "../img/img-json/remerafut04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70301,
+            "name": "Zapatillas deportivas",
+            "image": "../img/img-json/zapatillas01.jpg"
+        },
+        {
+            "id": 70302,
+            "name": "Pantalones deportivos",
+            "image": "../img/img-json/pantalones01.jpg"
+        }
+    ]
+}

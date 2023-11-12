@@ -1,0 +1,27 @@
+{
+    "id": 70100,
+    "name": "Camiseta de algodón",
+    "description": "Camiseta cómoda de algodón en varios colores y tallas.",
+    "cost": 15,
+    "currency": "USD",
+    "soldCount": 100,
+    "category": "Ropa",
+    "images": [
+        "../img/img-json/camiseta01.jpg",
+        "../img/img-json/camiseta02.jpg",
+        "../img/img-json/camiseta03.jpg",
+        "../img/img-json/camiseta04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70101,
+            "name": "Jeans clásicos",
+            "image": "../img/img-json/jeans01.jpg"
+        },
+        {
+            "id": 70102,
+            "name": "Zapatos de cuero",
+            "image": "../img/img-json/zapatos01.jpg"
+        }
+    ]
+}

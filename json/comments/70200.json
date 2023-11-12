@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70200,
+      "score": 5,
+      "description": "Esta lavadora de carga frontal es increíblemente eficiente. Lava la ropa de manera impecable y ahorra energía.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 01:15:32"
+    },
+    {
+      "product": 70200,
+      "score": 4,
+      "description": "La calidad de lavado de esta lavadora es sorprendente. Mi ropa sale más limpia y fresca que nunca.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 01:30:18"
+    },
+    {
+      "product": 70200,
+      "score": 5,
+      "description": "La lavadora de carga frontal es fácil de usar y tiene muchas funciones útiles. Ha simplificado la tarea de lavar la ropa.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 01:45:59"
+    },
+    {
+      "product": 70200,
+      "score": 4,
+      "description": "La eficiencia energética de esta lavadora es destacable. He notado un ahorro significativo en mi factura de electricidad.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 02:00:42"
+    },
+    {
+      "product": 70200,
+      "score": 4,
+      "description": "Esta lavadora de carga frontal ha mejorado mi rutina de lavado. La calidad y la eficiencia son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 02:15:21"
+    }
+  ]
+  

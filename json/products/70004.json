@@ -1,0 +1,27 @@
+{
+    "id": 70004,
+    "name": "Llave ajustable",
+    "description": "Llave ajustable de alta calidad para apretar y aflojar tuercas y pernos.",
+    "cost": 25,
+    "currency": "USD",
+    "soldCount": 60,
+    "category": "Herramientas",
+    "images": [
+        "../img/img-json/llave01.jpg",
+        "../img/img-json/llave02.jpg",
+        "../img/img-json/llave03.jpg",
+        "../img/img-json/llave04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70000,
+            "name": "Martillo",
+            "image": "../img/img-json/martillo01.jpg"
+        },
+        {
+            "id": 70001,
+            "name": "Destornillador",
+            "image": "../img/img-json/destornillador01.jpg"
+        }
+    ]
+}

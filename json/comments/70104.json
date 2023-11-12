@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70104,
+      "score": 5,
+      "description": "Este sombrero de ala ancha es elegante y funcional. Me protege del sol y se ve genial con cualquier atuendo.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-05 23:15:32"
+    },
+    {
+      "product": 70104,
+      "score": 4,
+      "description": "La calidad y el diseño de este sombrero son excepcionales. La forma del ala es perfecta y el material es duradero.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-05 23:30:18"
+    },
+    {
+      "product": 70104,
+      "score": 5,
+      "description": "El sombrero de ala ancha es versátil y se adapta a diferentes estilos. Lo uso tanto en la playa como en la ciudad.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-05 23:45:59"
+    },
+    {
+      "product": 70104,
+      "score": 4,
+      "description": "La comodidad y protección que ofrece este sombrero son notables. Me siento elegante y protegido del sol.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 00:00:42"
+    },
+    {
+      "product": 70104,
+      "score": 4,
+      "description": "Este sombrero de ala ancha es un complemento esencial en mi guardarropa. La calidad y el diseño son inigualables.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 00:15:21"
+    }
+  ]
+  

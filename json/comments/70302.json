@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70302,
+      "score": 5,
+      "description": "Estos pantalones deportivos son cómodos y de alta calidad. Son ideales para mis entrenamientos y actividades al aire libre.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 15:15:32"
+    },
+    {
+      "product": 70302,
+      "score": 4,
+      "description": "La calidad de estos pantalones es sorprendente. Son resistentes y se ajustan perfectamente.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 15:30:18"
+    },
+    {
+      "product": 70302,
+      "score": 5,
+      "description": "Los pantalones deportivos son versátiles y se adaptan a diferentes tipos de ejercicio. Me siento cómodo y con estilo.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 15:45:59"
+    },
+    {
+      "product": 70302,
+      "score": 4,
+      "description": "La comodidad y el ajuste de estos pantalones son notables. Los uso tanto en el gimnasio como para relajarme en casa.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 16:00:42"
+    },
+    {
+      "product": 70302,
+      "score": 4,
+      "description": "Estos pantalones deportivos son esenciales para cualquier persona activa. La calidad y el diseño son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 16:15:21"
+    }
+  ]
+  

@@ -167,3 +167,11 @@ article:hover img {
 .transformationBtn{
     transform: translateY(-35px);
 }
+.dropdown-menu{
+    transform: translate(-170px, 52px) !important;
+}
+@media (max-width:680px){
+    .dropdown-menu{
+		transform: translate3d(-140px, 45px, 0px) !important;
+	}
+}

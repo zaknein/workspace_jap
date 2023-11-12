@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70101,
+      "score": 5,
+      "description": "Estos jeans clásicos son cómodos y tienen un ajuste perfecto. Son ideales para el uso diario.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-05 17:15:32"
+    },
+    {
+      "product": 70101,
+      "score": 4,
+      "description": "La calidad de estos jeans es impresionante. Los materiales son duraderos y resistentes.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-05 17:30:18"
+    },
+    {
+      "product": 70101,
+      "score": 5,
+      "description": "Los jeans clásicos son versátiles y elegantes. Se adaptan a diferentes ocasiones y estilos.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-05 17:45:59"
+    },
+    {
+      "product": 70101,
+      "score": 4,
+      "description": "La comodidad y ajuste de estos jeans son notables. Los uso tanto para el trabajo como para el fin de semana.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-05 18:00:42"
+    },
+    {
+      "product": 70101,
+      "score": 4,
+      "description": "Estos jeans clásicos son un básico en mi guardarropa. Son resistentes y se ven geniales en cualquier ocasión.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-05 18:15:21"
+    }
+  ]
+  

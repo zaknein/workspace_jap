@@ -1,0 +1,27 @@
+{
+    "id": 70001,
+    "name": "Destornillador",
+    "description": "Juego de destornilladores de precisión con múltiples puntas intercambiables.",
+    "cost": 15,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Herramientas",
+    "images": [
+        "../img/img-json/destornillador01.jpg",
+        "../img/img-json/destornillador02.jpg",
+        "../img/img-json/destornillador03.jpg",
+        "../img/img-json/destornillador04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70002,
+            "name": "Sierra eléctrica",
+            "image": "../img/img-json/sierra01.jpg"
+        },
+        {
+            "id": 70003,
+            "name": "Taladro inalámbrico",
+            "image": "../img/img-json/taladro01.jpg"
+        }
+    ]
+}

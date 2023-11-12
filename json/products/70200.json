@@ -1,0 +1,27 @@
+{
+    "id": 70200,
+    "name": "Lavadora de carga frontal",
+    "description": "Lavadora de carga frontal con múltiples programas de lavado.",
+    "cost": 400,
+    "currency": "USD",
+    "soldCount": 50,
+    "category": "Electrodomésticos",
+    "images": [
+        "../img/img-json/lavarropa01.jpg",
+        "../img/img-json/lavarropa02.jpg",
+        "../img/img-json/lavarropa03.jpg",
+        "../img/img-json/lavarropa04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70201,
+            "name": "Refrigerador de dos puertas",
+            "image": "../img/img-json/heladera01.jpg"
+        },
+        {
+            "id": 70202,
+            "name": "Horno de microondas",
+            "image": "../img/img-json/microondas01.jpg"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70301,
+      "score": 5,
+      "description": "Estas zapatillas deportivas son cómodas y de alta calidad. Son ideales para correr y hacer ejercicio.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 13:15:32"
+    },
+    {
+      "product": 70301,
+      "score": 4,
+      "description": "La calidad de construcción de estas zapatillas es sorprendente. Proporcionan un buen soporte y son duraderas.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 13:30:18"
+    },
+    {
+      "product": 70301,
+      "score": 5,
+      "description": "Las zapatillas deportivas son versátiles y se adaptan a diferentes tipos de entrenamiento. Me han ayudado a mejorar mi rendimiento.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 13:45:59"
+    },
+    {
+      "product": 70301,
+      "score": 4,
+      "description": "La comodidad y el ajuste de estas zapatillas son notables. Son ideales para largas sesiones de entrenamiento.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 14:00:42"
+    },
+    {
+      "product": 70301,
+      "score": 4,
+      "description": "Estas zapatillas deportivas son esenciales para cualquier deportista. La calidad y el diseño son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 14:15:21"
+    }
+  ]
+  

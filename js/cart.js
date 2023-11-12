@@ -156,7 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const MASTER = document.getElementById("mastercardBtn");
     const VISA = document.getElementById("visaBtn");
     const MAESTRO = document.getElementById("maestroBtn");
-    const PAYPAL = document.getElementById("paypalBtn")
     const CONTAINER = document.getElementById("methodInfoContainer");
 
     MASTER.addEventListener("click", () => {
@@ -166,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <label for="masterinputCardNumber" class="form-label">Nro de Tarjeta</label>
           <input type="text" class="form-control" id="masterinputCardNumber" placeholder="xxxx-xxxx-xxxx-xxxx-xxxx" minlength="17" required>
           <div class="valid-feedback">
-            Looks good!
+            Valido!
           </div>
           <div class="invalid-feedback">
             Ingrese Nro de Tarjeta
@@ -297,11 +296,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
     </div>`
-    });
-    PAYPAL.addEventListener("click", () => {
-      CONTAINER.innerHTML = `<div id="paypal">
-      <img src="img/commingsoon-img.png" alt="Commingsoon">
-  </div>`
     });
     
   });

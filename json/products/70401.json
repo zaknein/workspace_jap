@@ -1,0 +1,27 @@
+{
+    "id": 70401,
+    "name": "Samsung Galaxy S22",
+    "description": "El buque insignia de Samsung con pantalla AMOLED y potente procesador.",
+    "cost": 899,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Teléfonos móviles",
+    "images": [
+        "../img/img-json/samsung2201.jpg",
+        "../img/img-json/samsung2202.jpg",
+        "../img/img-json/samsung2203.jpg",
+        "../img/img-json/samsung2204.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70402,
+            "name": "Google Pixel 7",
+            "image": "../img/img-json/pixel701.jpg"
+        },
+        {
+            "id": 70403,
+            "name": "OnePlus 9 Pro",
+            "image": "../img/img-json/oneplus01.jpg"
+        }
+    ]
+}

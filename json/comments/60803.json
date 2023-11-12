@@ -1,0 +1,38 @@
+[
+    {
+      "product": 60803,
+      "score": 5,
+      "description": "El armario es espacioso y bien organizado. Me ayuda a mantener mi ropa en orden de manera eficiente.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-05 01:15:32"
+    },
+    {
+      "product": 60803,
+      "score": 4,
+      "description": "La calidad de construcción de este armario es excepcional. Cada detalle está bien pensado.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-05 01:30:18"
+    },
+    {
+      "product": 60803,
+      "score": 5,
+      "description": "El armario es elegante y funcional. Combina perfectamente con la decoración de mi habitación.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-05 01:45:59"
+    },
+    {
+      "product": 60803,
+      "score": 4,
+      "description": "La capacidad de almacenamiento de este armario es sorprendente. Puedo guardar todas mis prendas sin problemas.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-05 02:00:42"
+    },
+    {
+      "product": 60803,
+      "score": 4,
+      "description": "Este armario ha organizado mi vida. Es práctico y estilizado al mismo tiempo.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-05 02:15:21"
+    }
+  ]
+  

@@ -1,0 +1,38 @@
+[
+    {
+      "product": 40286,
+      "score": 5,
+      "description": "Este mouse inalámbrico Logitech es una maravilla. Es preciso y cómodo de usar durante horas.",
+      "user": "lucas_gonzalez",
+      "dateTime": "2023-11-04 19:15:32"
+    },
+    {
+      "product": 40286,
+      "score": 4,
+      "description": "La duración de la batería de este mouse es asombrosa. No tengo que preocuparme por recargarlo constantemente.",
+      "user": "sara_martinez",
+      "dateTime": "2023-11-04 19:30:18"
+    },
+    {
+      "product": 40286,
+      "score": 5,
+      "description": "La precisión de este mouse inalámbrico Logitech es excepcional. Ideal para trabajos que requieren detalles precisos.",
+      "user": "javier_hernandez",
+      "dateTime": "2023-11-04 19:45:59"
+    },
+    {
+      "product": 40286,
+      "score": 4,
+      "description": "El diseño ergonómico de este mouse es perfecto. Mi mano se siente cómoda durante todo el día.",
+      "user": "maria_gomez",
+      "dateTime": "2023-11-04 20:00:42"
+    },
+    {
+      "product": 40286,
+      "score": 4,
+      "description": "Este mouse Logitech ha mejorado mi productividad. Lo recomiendo a todos mis colegas.",
+      "user": "daniel_rodriguez",
+      "dateTime": "2023-11-04 20:15:21"
+    }
+  ]
+  

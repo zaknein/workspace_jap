@@ -1,0 +1,52 @@
+{
+    "catID": 104,
+    "catName": "Herramientas",
+    "products": [
+      {
+        "id": 70000,
+        "name": "Martillo",
+        "description": "Martillo de acero con mango de madera, ideal para trabajos de carpintería.",
+        "cost": 20,
+        "currency": "USD",
+        "soldCount": 50,
+        "image": "../img/img-json/martillo01.jpg"
+      },
+      {
+        "id": 70001,
+        "name": "Destornillador",
+        "description": "Juego de destornilladores de precisión con múltiples puntas intercambiables.",
+        "cost": 15,
+        "currency": "USD",
+        "soldCount": 75,
+        "image": "../img/img-json/destornillador01.jpg"
+      },
+      {
+        "id": 70002,
+        "name": "Sierra eléctrica",
+        "description": "Sierra circular eléctrica para cortes precisos en madera y otros materiales.",
+        "cost": 80,
+        "currency": "USD",
+        "soldCount": 30,
+        "image": "../img/img-json/sierra01.jpg"
+      },
+      {
+        "id": 70003,
+        "name": "Taladro inalámbrico",
+        "description": "Taladro inalámbrico con batería recargable y múltiples velocidades.",
+        "cost": 60,
+        "currency": "USD",
+        "soldCount": 40,
+        "image": "../img/img-json/taladro01.jpg"
+      },
+      {
+        "id": 70004,
+        "name": "Llave ajustable",
+        "description": "Llave ajustable de alta calidad para apretar y aflojar tuercas y pernos.",
+        "cost": 25,
+        "currency": "USD",
+        "soldCount": 60,
+        "image": "../img/img-json/llave01.jpg"
+      }
+    ]
+  }
+  

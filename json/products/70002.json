@@ -1,0 +1,27 @@
+{
+    "id": 70002,
+    "name": "Sierra eléctrica",
+    "description": "Sierra circular eléctrica para cortes precisos en madera y otros materiales.",
+    "cost": 80,
+    "currency": "USD",
+    "soldCount": 30,
+    "category": "Herramientas",
+    "images": [
+        "../img/img-json/sierra01.jpg",
+        "../img/img-json/sierra02.jpg",
+        "../img/img-json/sierra03.jpg",
+        "../img/img-json/sierra04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70003,
+            "name": "Taladro inalámbrico",
+            "image": "../img/img-json/taladro01.jpg"
+        },
+        {
+            "id": 70004,
+            "name": "Llave ajustable",
+            "image": "../img/img-json/llave01.jpg"
+        }
+    ]
+}

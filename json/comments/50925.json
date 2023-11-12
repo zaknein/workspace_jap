@@ -1,0 +1,38 @@
+[
+    {
+      "product": 50925,
+      "score": 5,
+      "description": "El Bugatti Chiron es una obra maestra de la ingeniería. La velocidad y el lujo se combinan en un solo coche.",
+      "user": "andres_martinez",
+      "dateTime": "2023-11-04 21:15:32"
+    },
+    {
+      "product": 50925,
+      "score": 4,
+      "description": "El rendimiento de este coche es impresionante. Puedo sentir la potencia en cada aceleración.",
+      "user": "laura_gutierrez",
+      "dateTime": "2023-11-04 21:30:18"
+    },
+    {
+      "product": 50925,
+      "score": 5,
+      "description": "El Bugatti Chiron es un sueño hecho realidad. Conducirlo es una experiencia inigualable.",
+      "user": "roberto_hernandez",
+      "dateTime": "2023-11-04 21:45:59"
+    },
+    {
+      "product": 50925,
+      "score": 4,
+      "description": "La calidad y atención al detalle en el Chiron son excepcionales. Cada elemento está cuidadosamente diseñado.",
+      "user": "carolina_perez",
+      "dateTime": "2023-11-04 22:00:42"
+    },
+    {
+      "product": 50925,
+      "score": 4,
+      "description": "Este Bugatti Chiron ha superado todas mis expectativas. Es un verdadero superdeportivo.",
+      "user": "juan_lopez",
+      "dateTime": "2023-11-04 22:15:21"
+    }
+  ]
+  

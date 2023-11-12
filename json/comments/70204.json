@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70204,
+      "score": 5,
+      "description": "Esta licuadora de alta potencia es increíble. Mezcla frutas y verduras en segundos, y es fácil de limpiar.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 09:15:32"
+    },
+    {
+      "product": 70204,
+      "score": 4,
+      "description": "La calidad de mezcla de esta licuadora es sorprendente. Los smoothies salen suaves y sin grumos.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 09:30:18"
+    },
+    {
+      "product": 70204,
+      "score": 5,
+      "description": "La licuadora de alta potencia es versátil y tiene muchas funciones útiles. Ha mejorado mi dieta y mi salud.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 09:45:59"
+    },
+    {
+      "product": 70204,
+      "score": 4,
+      "description": "La eficiencia de esta licuadora es destacable. Puedo preparar batidos y sopas en cuestión de minutos.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 10:00:42"
+    },
+    {
+      "product": 70204,
+      "score": 4,
+      "description": "Esta licuadora de alta potencia ha mejorado mi estilo de vida. La calidad y la potencia son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 10:15:21"
+    }
+  ]
+  

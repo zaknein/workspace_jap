@@ -1,0 +1,27 @@
+{
+    "id": 40284,
+    "name": "Monitor LG 4K",
+    "description": "Monitor LG 4K con colores vibrantes y alta resolución para una experiencia visual inmersiva.",
+    "cost": 400,
+    "currency": "USD",
+    "soldCount": 30,
+    "category": "Monitores",
+    "images": [
+        "../img/img-json/monitor01.jpg",
+        "../img/img-json/monitor02.jpg",
+        "../img/img-json/monitor03.jpg",
+        "../img/img-json/monitor04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 40285,
+            "name": "Teclado mecánico Corsair",
+            "image": "../img/img-json/teclado01.jpg"
+        },
+        {
+            "id": 40286,
+            "name": "Mouse inalámbrico Logitech",
+            "image": "../img/img-json/mouse01.jpg"
+        }
+    ]
+}

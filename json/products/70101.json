@@ -1,0 +1,27 @@
+{
+    "id": 70101,
+    "name": "Jeans clásicos",
+    "description": "Jeans de corte clásico y duraderos en diversas tallas.",
+    "cost": 35,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Ropa",
+    "images": [
+        "../img/img-json/jeans01.jpg",
+        "../img/img-json/jeans02.jpg",
+        "../img/img-json/jeans03.jpg",
+        "../img/img-json/jeans04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70102,
+            "name": "Zapatos de cuero",
+            "image": "../img/img-json/zapatos01.jpg"
+        },
+        {
+            "id": 70103,
+            "name": "Vestido de noche",
+            "image": "../img/img-json/vestido01.jpg"
+        }
+    ]
+}

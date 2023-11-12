@@ -1,0 +1,52 @@
+{
+    "catID": 108,
+    "catName": "Indumentaria Deportiva",
+    "products": [
+      {
+        "id": 70300,
+        "name": "Camiseta de fútbol",
+        "description": "Camiseta de fútbol de tu equipo favorito con los colores y el escudo.",
+        "cost": 30,
+        "currency": "USD",
+        "soldCount": 50,
+        "image": "../img/img-json/remerafut01.jpg"
+      },
+      {
+        "id": 70301,
+        "name": "Zapatillas deportivas",
+        "description": "Zapatillas deportivas para correr o entrenar con comodidad y estilo.",
+        "cost": 80,
+        "currency": "USD",
+        "soldCount": 75,
+        "image": "../img/img-json/zapatillas01.jpg"
+      },
+      {
+        "id": 70302,
+        "name": "Pantalones deportivos",
+        "description": "Pantalones deportivos ideales para actividades al aire libre.",
+        "cost": 40,
+        "currency": "USD",
+        "soldCount": 30,
+        "image": "../img/img-json/pantalones01.jpg"
+      },
+      {
+        "id": 70303,
+        "name": "Chaqueta deportiva",
+        "description": "Chaqueta deportiva resistente al viento y al agua para entrenamientos al aire libre.",
+        "cost": 60,
+        "currency": "USD",
+        "soldCount": 40,
+        "image": "../img/img-json/chaqueta01.jpg"
+      },
+      {
+        "id": 70304,
+        "name": "Balón de fútbol",
+        "description": "Balón de fútbol oficial para tus partidos y entrenamientos.",
+        "cost": 25,
+        "currency": "USD",
+        "soldCount": 60,
+        "image": "../img/img-json/pelota01.jpg"
+      }
+    ]
+  }
+  

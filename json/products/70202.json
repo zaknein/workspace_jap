@@ -1,0 +1,27 @@
+{
+    "id": 70202,
+    "name": "Horno de microondas",
+    "description": "Horno de microondas con múltiples configuraciones de cocción.",
+    "cost": 100,
+    "currency": "USD",
+    "soldCount": 30,
+    "category": "Electrodomésticos",
+    "images": [
+        "../img/img-json/microondas01.jpg",
+        "../img/img-json/microondas02.jpg",
+        "../img/img-json/microondas03.jpg",
+        "../img/img-json/microondas04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70203,
+            "name": "Aspiradora robotizada",
+            "image": "../img/img-json/aspiradora01.jpg"
+        },
+        {
+            "id": 70204,
+            "name": "Licuadora de alta potencia",
+            "image": "../img/img-json/licuadora01.jpg"
+        }
+    ]
+}

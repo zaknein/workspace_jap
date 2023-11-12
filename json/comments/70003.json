@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70003,
+      "score": 5,
+      "description": "El taladro inalámbrico es poderoso y versátil. Ha sido una herramienta esencial en mis proyectos de construcción.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-05 11:15:32"
+    },
+    {
+      "product": 70003,
+      "score": 4,
+      "description": "La duración de la batería de este taladro es asombrosa. Puedo trabajar durante horas sin recargarlo.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-05 11:30:18"
+    },
+    {
+      "product": 70003,
+      "score": 5,
+      "description": "El taladro inalámbrico es fácil de usar y muy eficiente. Lo he usado en proyectos de construcción y bricolaje.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-05 11:45:59"
+    },
+    {
+      "product": 70003,
+      "score": 4,
+      "description": "La potencia de este taladro es impresionante. Es perfecto para perforar en diferentes materiales.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-05 12:00:42"
+    },
+    {
+      "product": 70003,
+      "score": 4,
+      "description": "Este taladro inalámbrico ha hecho que mis tareas de bricolaje sean más fáciles. Lo recomiendo a todos los entusiastas del bricolaje.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-05 12:15:21"
+    }
+  ]
+  

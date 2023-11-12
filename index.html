@@ -48,6 +48,7 @@
       <a href="index.html"><img id="commerceBanner" src="img\logo_commerce.png" alt="commerce-banner"></a>
       
     </div>
+    
   <!-- =============================== Dropdown =====================================  -->
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,11 +58,13 @@
         <p id="email"></p>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
-        <a class="dropdown-item" href="cart.html">Mi Carrito</a>
+        <a class="dropdown-item" href="cart.html"
+						>Mi Carrito <span id="CountCart" class="badge text-bg-light">0</span></a
+					>
         <a class="dropdown-item" href="#">Mis Compras</a>
         <a class="dropdown-item" href="#">Configuración</a>
         <div class="dropdown-divider"></div>
-        <button id="log-out-btn" class="dropdown-item">Log-Out</button>
+        <button id="log-out-btn" class="dropdown-item">Cerrar Sesión</button>
         <div class="wrap-toggle">
           <input type="checkbox" id="toggle" class="offscreen">
           <label for="toggle" class="switch"></label>
@@ -115,6 +118,15 @@
   <main id="main-display">
     <div id="gallery-container">
       <h1 id="gallery-message">¡Selecciona una de las categorías!</h1>
+      <h1 class="gallery-subtitle" id="msg-autos">Autos</h1>
+      <h1 class="gallery-subtitle" id="msg-juguetes">Juguetes</h1>
+      <h1 class="gallery-subtitle" id="msg-muebles">Muebles</h1>
+      <h1 class="gallery-subtitle" id="msg-herramientas">Herramientas</h1>
+      <h1 class="gallery-subtitle" id="msg-tecnologia">Tecnología</h1>
+      <h1 class="gallery-subtitle" id="msg-vestimenta">Vestimenta</h1>
+      <h1 class="gallery-subtitle" id="msg-electrodomesticos">Electrodomesticos</h1>
+      <h1 class="gallery-subtitle" id="msg-deportes">Deportes</h1>
+      <h1 class="gallery-subtitle" id="msg-celulares">Celulares</h1>
       <section class="gallery">
         <article class="card" id="cars">
             <figure>
@@ -202,7 +214,7 @@
   <script src="js/darktheme.js"></script>
   <script src="js/init.js"></script>
   <script src="js/cookies.js"></script>
-  <script src="js/"></script>
+  <script src="js/cantCarrito.js"></script>
 </body>
 
 </html>

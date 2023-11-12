@@ -1,0 +1,27 @@
+{
+    "id": 70203,
+    "name": "Aspiradora robotizada",
+    "description": "Aspiradora robotizada que limpia tu hogar de forma automática.",
+    "cost": 250,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Electrodomésticos",
+    "images": [
+        "../img/img-json/aspiradora01.jpg",
+        "../img/img-json/aspiradora02.jpg",
+        "../img/img-json/aspiradora03.jpg",
+        "../img/img-json/aspiradora04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70204,
+            "name": "Licuadora de alta potencia",
+            "image": "../img/img-json/licuadora01.jpg"
+        },
+        {
+            "id": 70200,
+            "name": "Lavadora de carga frontal",
+            "image": "../img/img-json/lavarropa01.jpg"
+        }
+    ]
+}

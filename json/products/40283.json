@@ -1,0 +1,27 @@
+{
+    "id": 40283,
+    "name": "PC de escritorio HP",
+    "description": "PC de escritorio HP con potente rendimiento y amplio almacenamiento.",
+    "cost": 1000,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Computadoras",
+    "images": [
+        "../img/img-json/hp1.jpg",
+        "../img/img-json/hp2.jpg",
+        "../img/img-json/hp3.jpg",
+        "../img/img-json/hp4.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 40284,
+            "name": "Monitor LG 4K",
+            "image": "../img/img-json/monitor01.jpg"
+        },
+        {
+            "id": 40285,
+            "name": "Teclado mecánico Corsair",
+            "image": "../img/img-json/teclado01.jpg"
+        }
+    ]
+}

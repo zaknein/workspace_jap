@@ -5,6 +5,10 @@ const animatedDiv = document.getElementById("layerTwoCredMan")
 const title = document.getElementById("credentialsDivTitle")
 const text = document.getElementById("credentialsDivText")
 const message = document.getElementById('message');
+const LOGINNAVBTN = document.getElementById('loginNavBtn');
+const REGISTERNAVBTN = document.getElementById('registerNavBtn');
+const FRAMELOGIN = document.getElementById('frameLogin');
+const FRAMEREGISTER = document.getElementById('frameSignup');
 // Traemos los botones del bloque animado
 
 btnLogin2.disabled = true; // Inhabilitamos el botón de Login ya que la página parte mostrando el Login
@@ -62,3 +66,27 @@ function closePopup() {
     document.getElementById("termsPopup").style.display = "none";
 }
 // Aquí se puede cerrar el PopUp de Terms & Conditions si lo clickean en el SignUp
+
+//============================ Nav de login y registro responsive =============================
+
+
+
+    REGISTERNAVBTN.addEventListener("click", ()=>{
+
+            REGISTERNAVBTN.classList.add("active");
+            LOGINNAVBTN.classList.remove("active");
+            FRAMELOGIN.style.display = "none";
+            FRAMEREGISTER.style.display = "block";
+
+
+    })
+    LOGINNAVBTN.addEventListener("click", ()=>{
+
+            LOGINNAVBTN.classList.add("active");
+            REGISTERNAVBTN.classList.remove("active");
+            FRAMEREGISTER.style.display = "none";
+            FRAMELOGIN.style.display = "block";
+        
+    })
+    
+

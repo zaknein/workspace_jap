@@ -1,5 +1,15 @@
 // Funcionamiento de la Galería - Asigna CatID a cada una de las cartas
 const GALLERYMSG = document.getElementById('gallery-message');
+ const msgcatautos = document.getElementById('msg-autos');
+ const msgcatjuguetes = document.getElementById('msg-juguetes');
+ const msgcatmuebles = document.getElementById('msg-muebles');
+ const msgcatherramientas = document.getElementById('msg-herramientas');
+ const msgcattecnologia = document.getElementById('msg-tecnologia');
+ const msgcatvestimenta = document.getElementById('msg-vestimenta');
+ const msgcatelectrodomesticos = document.getElementById('msg-electrodomesticos');
+ const msgcatdeportes = document.getElementById('msg-deportes');
+ const msgcatcelulares = document.getElementById('msg-celulares');
+
 function PreventMessage() {
     if (GALLERYMSG.innerHTML !== "¡Selecciona una de las categorías!"){
         return true;
@@ -9,10 +19,16 @@ function PreventMessage() {
 }
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("gallery-container").addEventListener("mouseleave", function () {
-        setTimeout( () => {
-            GALLERYMSG.innerHTML = "¡Selecciona una de las categorías!"
-        },
-        400)
+        GALLERYMSG.style.display = 'block';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
         
     })
     // Tarjeta de Autos - Interacciones con el cliente
@@ -21,20 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("cars").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "Los vehículos más rápidos";
-        }, 1000);
-    })
-    document.getElementById("cars").addEventListener("mouseleave", function (e) {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'block';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
     // Tarjeta de Autos - Interacciones con el cliente
     // Tarjeta de Juguetes - Interacciones con el cliente
@@ -43,20 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("toys").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡Jugarás por horas!";
-        }, 1000);
-    });
-    document.getElementById("toys").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'block';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
     // Tarjeta de Juguetes - Interacciones con el cliente
     // Tarjeta de Muebles - Interacciones con el cliente
@@ -65,21 +73,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("furniture").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "Construye tu hogar";
-        }, 1000);
-        
-    });
-    document.getElementById("furniture").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'block';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
     // Tarjeta de Muebles - Interacciones con el cliente
     // Tarjeta de Herramientas - Interacciones con el cliente
@@ -88,22 +91,18 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("tools").addEventListener("mouseenter", function () {
-        
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡Los mejores amigos para reparar un corazón roto!";
-        }, 1000);
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'block';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
-    document.getElementById("tools").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
-    });
+
     // Tarjeta de Herramientas - Interacciones con el cliente
     // Tarjeta de Computadoras - Interacciones con el cliente
     document.getElementById("computers").addEventListener("click", function () {
@@ -111,44 +110,36 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("computers").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "Computadoras de última tecnología";
-        }, 1000);
-        
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'block';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
-    document.getElementById("computers").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
-    })
+
     // Tarjeta de Ropas - Interacciones con el cliente
     document.getElementById("clothes").addEventListener("click", function () {
         localStorage.setItem("catID", 106);
         window.location = "products.html"
     });
     document.getElementById("clothes").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡La moda directo hacia ti!";
-        }, 1000);
-        
-    })
-    document.getElementById("clothes").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'block';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
+
     // Tarjeta de Ropas - Interacciones con el cliente
     // Tarjeta de Electrodomesticos - Interacciones con el cliente
     document.getElementById("electrodomestics").addEventListener("click", function () {
@@ -156,22 +147,18 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("electrodomestics").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡Las mejores comodidades para tu hogar!";
-        }, 1000);
-        
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'block';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'none';
     });
-    document.getElementById("electrodomestics").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
-    });
+
     // Tarjeta de Electrodomesticos - Interacciones con el cliente
     // Tarjeta de Deportes - Interacciones con el cliente
     document.getElementById("sports").addEventListener("click", function () {
@@ -179,22 +166,18 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("sports").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡Compite con los mejores, hombro a hombro!";
-        }, 1000);
-        
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'block';
+        msgcatcelulares.style.display = 'none';
     });
-    document.getElementById("sports").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
-    });
+
     // Tarjeta de Deportes - Interacciones con el cliente
     // Tarjeta de Celulares - Interacciones con el cliente
     document.getElementById("cellphones").addEventListener("click", function () {
@@ -202,21 +185,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location = "products.html"
     });
     document.getElementById("cellphones").addEventListener("mouseenter", function () {
-        setTimeout(() => {
-            GALLERYMSG.innerHTML = "¡Conéctate a la red! ¡Comunicáte con quien quieras!";
-        }, 1000);
-        
-    });
-    document.getElementById("cellphones").addEventListener("mouseleave", function () {
-        if (!PreventMessage()){
-            return;
-        };
-        GALLERYMSG.classList.add('fade-out');
-        setTimeout(() => {
-            
-            GALLERYMSG.classList.remove('fade-out')
-        },
-            1000)
+        GALLERYMSG.style.display = 'none';
+        msgcatautos.style.display = 'none';
+        msgcatjuguetes.style.display = 'none';
+        msgcatmuebles.style.display = 'none';
+        msgcatherramientas.style.display = 'none';
+        msgcattecnologia.style.display = 'none';
+        msgcatvestimenta.style.display = 'none';
+        msgcatelectrodomesticos.style.display = 'none';
+        msgcatdeportes.style.display = 'none';
+        msgcatcelulares.style.display = 'block';
     });
     // Tarjeta de Celulares - Interacciones con el cliente
 });
@@ -257,29 +235,4 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.addEventListener("click", closePopup);
 });
 // Funcionamiento de 'No volver a mostrar' en Pop Up de presentación de la página
-// Setter de tema // Cambia las variables en el Root según el tema preferido
-const DARKMODE = document.getElementById('toggle');
-DARKMODE.addEventListener('change', (e) => {
-    const DARKMODE = document.getElementById('toggle');
-    if (DARKMODE.checked) {
-        /* aqui van los estilos del modo claro */
-        localStorage.setItem('theme', "light");
-        root.style.setProperty('--coloroscuro', '#b5b5db');
-        root.style.setProperty('--backgroundimage', 'url("../img/bg_img_light.webp")');
-    } else {
-        localStorage.setItem('theme', "dark");
-        root.style.setProperty('--coloroscuro', '#22222B');
-        root.style.setProperty('--backgroundimage', 'url("../img/bg_img.webp")');
 
-    }
-})
-
-document.addEventListener("DOMContentLoaded", () => {
-    let theme = localStorage.getItem('theme');
-    if (theme == "light") {
-        DARKMODE.checked = true;
-    } else if (theme == "dark") {
-        DARKMODE.checked = false;
-    }
-})
-// Setter de tema // Cambia las variables en el Root según el tema preferido

@@ -25,7 +25,7 @@ nav{
 #commerceBanner {
 	position: relative;
 	height: 35px;
-	top: -20px;
+	top: -25px;
 }
 
 nav a,
@@ -58,4 +58,7 @@ nav a,
         height: 20px;
         position: relative;
     }
+	
 }
+
+

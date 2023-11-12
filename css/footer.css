@@ -7,7 +7,8 @@
 
 	--darkalphacolor: #3f3f3f54; /*var(--darkalphacolor)*/
 	--lightalphacolor: rgba(235, 235, 235, 0.342); /*var(--lightalphacolor)*/
-	--backgroundimage: url("../img/bg_img.webp");
+	--backgroundimage1: url("../img/bg_img.webp");
+	--backgroundimage2: url("../img/bg_img2.webp");
 	--whitetext: #ffffff; /*var(--)*/
 	font-family: Tahoma;
 	font-size: 20px;

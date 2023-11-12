@@ -1,0 +1,27 @@
+{
+    "id": 70301,
+    "name": "Zapatillas deportivas",
+    "description": "Zapatillas deportivas para correr o entrenar con comodidad y estilo.",
+    "cost": 80,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Indumentaria deportiva",
+    "images": [
+        "../img/img-json/zapatillas01.jpg",
+        "../img/img-json/zapatillas02.jpg",
+        "../img/img-json/zapatillas03.jpg",
+        "../img/img-json/zapatillas04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70302,
+            "name": "Pantalones deportivos",
+            "image": "../img/img-json/pantalones01.jpg"
+        },
+        {
+            "id": 70303,
+            "name": "Chaqueta deportiva",
+            "image": "../img/img-json/chaqueta01.jpg"
+        }
+    ]
+}

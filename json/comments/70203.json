@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70203,
+      "score": 5,
+      "description": "Esta aspiradora robotizada es una maravilla. Mantiene mi hogar limpio sin esfuerzo y es fácil de programar.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 07:15:32"
+    },
+    {
+      "product": 70203,
+      "score": 4,
+      "description": "La calidad de limpieza de esta aspiradora es sorprendente. Limpia de manera eficiente y llega a todos los rincones.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 07:30:18"
+    },
+    {
+      "product": 70203,
+      "score": 5,
+      "description": "La aspiradora robotizada es versátil y tiene muchas funciones útiles. Ha liberado tiempo para otras tareas.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 07:45:59"
+    },
+    {
+      "product": 70203,
+      "score": 4,
+      "description": "La eficiencia de esta aspiradora es destacable. Mi casa se mantiene limpia sin que yo haga ningún esfuerzo.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 08:00:42"
+    },
+    {
+      "product": 70203,
+      "score": 4,
+      "description": "Esta aspiradora robotizada ha mejorado mi vida en casa. La calidad y la eficiencia son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 08:15:21"
+    }
+  ]
+  

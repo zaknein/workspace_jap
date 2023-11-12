@@ -1,0 +1,27 @@
+{
+    "id": 40285,
+    "name": "Teclado mecánico Corsair",
+    "description": "Teclado mecánico Corsair con retroiluminación RGB y switches Cherry MX.",
+    "cost": 150,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Teclados",
+    "images": [
+        "../img/img-json/teclado01.jpg",
+        "../img/img-json/teclado02.jpg",
+        "../img/img-json/teclado03.jpg",
+        "../img/img-json/teclado04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 40286,
+            "name": "Mouse inalámbrico Logitech",
+            "image": "../img/img-json/mouse01.jpg"
+        },
+        {
+            "id": 40281,
+            "name": "Computadora de escritorio",
+            "image": "img/prod40281_1.jpg"
+        }
+    ]
+}

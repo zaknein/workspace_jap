@@ -1,0 +1,27 @@
+{
+    "id": 70000,
+    "name": "Martillo",
+    "description": "Martillo de acero con mango de madera, ideal para trabajos de carpintería.",
+    "cost": 20,
+    "currency": "USD",
+    "soldCount": 50,
+    "category": "Herramientas",
+    "images": [
+        "../img/img-json/martillo01.jpg",
+        "../img/img-json/martillo02.jpg",
+        "../img/img-json/martillo03.jpg",
+        "../img/img-json/martillo04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70001,
+            "name": "Destornillador",
+            "image": "../img/img-json/destornillador01.jpg"
+        },
+        {
+            "id": 70002,
+            "name": "Sierra eléctrica",
+            "image": "../img/img-json/sierra01.jpg"
+        }
+    ]
+}

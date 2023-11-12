@@ -1,0 +1,27 @@
+{
+    "id": 70201,
+    "name": "Refrigerador de dos puertas",
+    "description": "Refrigerador de dos puertas con dispensador de agua y hielo.",
+    "cost": 700,
+    "currency": "USD",
+    "soldCount": 75,
+    "category": "Electrodomésticos",
+    "images": [
+        "../img/img-json/heladera01.jpg",
+        "../img/img-json/heladera02.jpg",
+        "../img/img-json/heladera03.jpg",
+        "../img/img-json/heladera04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70202,
+            "name": "Horno de microondas",
+            "image": "../img/img-json/microondas01.jpg"
+        },
+        {
+            "id": 70203,
+            "name": "Aspiradora robotizada",
+            "image": "../img/img-json/aspiradora01.jpg"
+        }
+    ]
+}

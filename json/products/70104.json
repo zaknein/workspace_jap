@@ -1,0 +1,27 @@
+{
+    "id": 70104,
+    "name": "Sombrero de ala ancha",
+    "description": "Sombrero de ala ancha para protegerse del sol con estilo.",
+    "cost": 20,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Accesorios",
+    "images": [
+        "../img/img-json/sombrero01.jpg",
+        "../img/img-json/sombrero02.jpg",
+        "../img/img-json/sombrero03.jpg",
+        "../img/img-json/sombrero04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70100,
+            "name": "Camiseta de algodón",
+            "image": "../img/img-json/camiseta01.jpg"
+        },
+        {
+            "id": 70101,
+            "name": "Jeans clásicos",
+            "image": "../img/img-json/jeans01.jpg"
+        }
+    ]
+}

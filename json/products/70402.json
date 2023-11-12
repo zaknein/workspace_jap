@@ -1,0 +1,27 @@
+{
+    "id": 70402,
+    "name": "Google Pixel 7",
+    "description": "El teléfono de Google con una cámara de alta calidad y Android puro.",
+    "cost": 799,
+    "currency": "USD",
+    "soldCount": 30,
+    "category": "Teléfonos móviles",
+    "images": [
+        "../img/img-json/pixel701.jpg",
+        "../img/img-json/pixel702.jpg",
+        "../img/img-json/pixel703.jpg",
+        "../img/img-json/pixel704.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70403,
+            "name": "OnePlus 9 Pro",
+            "image": "../img/img-json/oneplus01.jpg"
+        },
+        {
+            "id": 70404,
+            "name": "Xiaomi Mi 12",
+            "image": "../img/img-json/xiaomi1201.jpg"
+        }
+    ]
+}

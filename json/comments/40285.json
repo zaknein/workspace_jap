@@ -1,0 +1,38 @@
+[
+    {
+      "product": 40285,
+      "score": 5,
+      "description": "El teclado mecánico Corsair es una maravilla. Las teclas son suaves y precisas para escribir.",
+      "user": "ana_gutierrez",
+      "dateTime": "2023-11-04 17:15:32"
+    },
+    {
+      "product": 40285,
+      "score": 4,
+      "description": "La retroiluminación personalizable de este teclado es genial. Puedo ajustarla según mi estado de ánimo.",
+      "user": "carlos_hernandez",
+      "dateTime": "2023-11-04 17:30:18"
+    },
+    {
+      "product": 40285,
+      "score": 5,
+      "description": "La respuesta táctil de las teclas de este teclado Corsair es excepcional. Perfecto para juegos y trabajo.",
+      "user": "luis_martinez",
+      "dateTime": "2023-11-04 17:45:59"
+    },
+    {
+      "product": 40285,
+      "score": 4,
+      "description": "La durabilidad de este teclado mecánico Corsair es sorprendente. No he tenido problemas en meses.",
+      "user": "marta_lopez",
+      "dateTime": "2023-11-04 18:00:42"
+    },
+    {
+      "product": 40285,
+      "score": 4,
+      "description": "El diseño de este teclado es elegante y funcional. Me encanta la sensación de las teclas.",
+      "user": "roberto_perez",
+      "dateTime": "2023-11-04 18:15:21"
+    }
+  ]
+  

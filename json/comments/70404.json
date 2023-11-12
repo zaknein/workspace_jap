@@ -1,0 +1,37 @@
+[
+    {
+        "product": 70404,
+        "score": 5,
+        "description": "El Xiaomi Mi 12 es una maravilla de la tecnología. La cámara es espectacular y la velocidad de procesamiento es sorprendente.",
+        "user": "lucia_gomez",
+        "dateTime": "2023-11-07 05:15:32"
+    },
+    {
+        "product": 70404,
+        "score": 4,
+        "description": "La calidad de la pantalla de este Xiaomi es excepcional. Los colores son vibrantes y la resolución es nítida.",
+        "user": "eduardo_martinez",
+        "dateTime": "2023-11-07 05:30:18"
+    },
+    {
+        "product": 70404,
+        "score": 5,
+        "description": "El Xiaomi Mi 12 es versátil y tiene muchas características útiles. Me ha simplificado la vida en muchas formas.",
+        "user": "andrea_lopez",
+        "dateTime": "2023-11-07 05:45:59"
+    },
+    {
+        "product": 70404,
+        "score": 4,
+        "description": "La duración de la batería de este Xiaomi es destacable. Puedo usarlo todo el día sin preocuparme por quedarme sin energía.",
+        "user": "sergio_gutierrez",
+        "dateTime": "2023-11-07 06:00:42"
+    },
+    {
+        "product": 70404,
+        "score": 4,
+        "description": "El Xiaomi Mi 12 es una inversión que vale la pena. La calidad y el rendimiento son excepcionales.",
+        "user": "paola_martinez",
+        "dateTime": "2023-11-07 06:15:21"
+    }
+]

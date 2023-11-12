@@ -1,0 +1,37 @@
+[
+    {
+        "product": 70001,
+        "score": 5,
+        "description": "El destornillador es una herramienta esencial en mi caja de herramientas. Ha sido muy útil en mis proyectos de bricolaje.",
+        "user": "lucia_rodriguez",
+        "dateTime": "2023-11-05 07:15:32"
+    },
+    {
+        "product": 70001,
+        "score": 4,
+        "description": "La calidad del destornillador es impresionante. Las puntas son resistentes y la empuñadura es cómoda de sostener.",
+        "user": "eduardo_gutierrez",
+        "dateTime": "2023-11-05 07:30:18"
+    },
+    {
+        "product": 70001,
+        "score": 5,
+        "description": "El destornillador es versátil y preciso. Lo he usado en reparaciones en el hogar y en proyectos de electrónica.",
+        "user": "andrea_martinez",
+        "dateTime": "2023-11-05 07:45:59"
+    },
+    {
+        "product": 70001,
+        "score": 4,
+        "description": "La facilidad de uso del destornillador es destacable. Es una herramienta esencial para cualquier persona que haga bricolaje.",
+        "user": "sergio_gonzalez",
+        "dateTime": "2023-11-05 08:00:42"
+    },
+    {
+        "product": 70001,
+        "score": 4,
+        "description": "Este destornillador ha sido confiable en cada proyecto. Lo recomiendo a mis amigos y familiares.",
+        "user": "paola_hernandez",
+        "dateTime": "2023-11-05 08:15:21"
+    }
+]

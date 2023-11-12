@@ -1,0 +1,27 @@
+{
+    "id": 70400,
+    "name": "iPhone 13",
+    "description": "El último modelo de iPhone con cámara mejorada y rendimiento excepcional.",
+    "cost": 999,
+    "currency": "USD",
+    "soldCount": 50,
+    "category": "Teléfonos móviles",
+    "images": [
+        "../img/img-json/iphone1301.jpg",
+        "../img/img-json/iphone1302.jpg",
+        "../img/img-json/iphone1303.jpg",
+        "../img/img-json/iphone1304.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70401,
+            "name": "Samsung Galaxy S22",
+            "image": "../img/img-json/samsung2201.jpg"
+        },
+        {
+            "id": 70402,
+            "name": "Google Pixel 7",
+            "image": "../img/img-json/pixel701.jpg"
+        }
+    ]
+}

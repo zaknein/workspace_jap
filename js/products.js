@@ -17,7 +17,7 @@ function showProductList() {
 	let htmlContentToAppend = "";
 
 	document.getElementById("titulo").innerHTML = `<h2>Productos</h2>
-        <p class="lead">Verás aquí todos los productos de la categorioa ${currentProductArray.catName}.</p>`;
+        <p class="lead">Verás aquí todos los productos de la categorias ${currentProductArray.catName}.</p>`;
 	for (let i = 0; i < currentProductArray.products.length; i++) {
 		let product = currentProductArray.products[i];
 		htmlContentToAppend += `
@@ -55,8 +55,8 @@ document.addEventListener("keyup", function (e) {
 			//recorro los productos
 			if (
 				//aca busco los nombre y las descripciones las paso a minuscula y con include comparo coicidencias con lo que escribi en el buscador
-				p.querySelector("#n").innerHTML.toLowerCase().includes(e.target.value) ||
-				p.querySelector("#d").innerHTML.toLowerCase().includes(e.target.value) ||
+				p.querySelector("#n").innerHTML.toLowerCase().includes(e.target.value.toLowerCase()) ||
+				p.querySelector("#d").innerHTML.toLowerCase().includes(e.target.value.toLowerCase()) ||
 				e.target.value === ""
 			) {
 				p.classList.remove("filtro"); //en caso de que sea verdadero le saco el filtro que el que los oculta
@@ -121,12 +121,14 @@ SOLDCOUNT.addEventListener("click", () => {
 // Funcionalidades Sort Ascendente y Descendente, así como por cantidad de vendidos
 // Sistema de filtrado por rango de costos
 COUNTER.addEventListener("click", () => {
+	if(MAXQA.value!="" && MINQA.value!=""){
 	let filteredProducts = currentProductArray.products.filter(
 		product => product.cost >= MINQA.value && product.cost <= MAXQA.value
 	);
 	currentProductArray.products = filteredProducts;
 	showProductList(currentProductArray.products);
 	console.log(filteredProducts);
+}
 });
 // Sistema de filtrado por rango de costos
 // Funcionalidad de filtrado 

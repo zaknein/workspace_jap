@@ -1,0 +1,27 @@
+{
+    "id": 70404,
+    "name": "Xiaomi Mi 12",
+    "description": "El Xiaomi Mi 12 con pantalla AMOLED y potente hardware.",
+    "cost": 699,
+    "currency": "USD",
+    "soldCount": 60,
+    "category": "Teléfonos móviles",
+    "images": [
+        "../img/img-json/xiaomi1201.jpg",
+        "../img/img-json/xiaomi1202.jpg",
+        "../img/img-json/xiaomi1203.jpg",
+        "../img/img-json/xiaomi1204.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70400,
+            "name": "iPhone 13",
+            "image": "../img/img-json/iphone1301.jpg"
+        },
+        {
+            "id": 70401,
+            "name": "Samsung Galaxy S22",
+            "image": "../img/img-json/samsung2201.jpg"
+        }
+    ]
+}

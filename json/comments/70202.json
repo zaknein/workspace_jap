@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70202,
+      "score": 5,
+      "description": "Este horno de microondas es rápido y eficiente. Calienta la comida de manera uniforme y es fácil de usar.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 05:15:32"
+    },
+    {
+      "product": 70202,
+      "score": 4,
+      "description": "La calidad de calentamiento de este horno es sorprendente. Mi comida siempre sale caliente y deliciosa.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 05:30:18"
+    },
+    {
+      "product": 70202,
+      "score": 5,
+      "description": "El horno de microondas es versátil y tiene muchas funciones útiles. Ha simplificado la tarea de calentar y cocinar alimentos.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 05:45:59"
+    },
+    {
+      "product": 70202,
+      "score": 4,
+      "description": "La eficiencia energética de este horno es destacable. He notado un ahorro significativo en mi factura de electricidad.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 06:00:42"
+    },
+    {
+      "product": 70202,
+      "score": 4,
+      "description": "Este horno de microondas ha mejorado mi rutina de cocina. La calidad y la eficiencia son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 06:15:21"
+    }
+  ]
+  

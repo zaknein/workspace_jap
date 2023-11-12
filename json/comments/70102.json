@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70102,
+      "score": 5,
+      "description": "Estos zapatos de cuero son elegantes y cómodos. La calidad del cuero es excepcional.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-05 19:15:32"
+    },
+    {
+      "product": 70102,
+      "score": 4,
+      "description": "La durabilidad de estos zapatos es impresionante. Los uso a diario y siguen luciendo como nuevos.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-05 19:30:18"
+    },
+    {
+      "product": 70102,
+      "score": 5,
+      "description": "Los zapatos de cuero son versátiles y se adaptan a diferentes estilos. Son ideales para el trabajo y eventos formales.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-05 19:45:59"
+    },
+    {
+      "product": 70102,
+      "score": 4,
+      "description": "La comodidad de estos zapatos es destacable. Puedo usarlos durante largas jornadas sin molestias.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-05 20:00:42"
+    },
+    {
+      "product": 70102,
+      "score": 4,
+      "description": "Estos zapatos de cuero son un básico en mi guardarropa. La calidad y estilo son inigualables.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-05 20:15:21"
+    }
+  ]
+  

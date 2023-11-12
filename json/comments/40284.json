@@ -1,0 +1,38 @@
+[
+    {
+      "product": 40284,
+      "score": 5,
+      "description": "Este monitor LG 4K es simplemente impresionante. La calidad de la imagen es asombrosa.",
+      "user": "marcos_gutierrez",
+      "dateTime": "2023-11-04 15:15:32"
+    },
+    {
+      "product": 40284,
+      "score": 4,
+      "description": "La resolución 4K de este monitor es perfecta para la edición de fotos y videos. Lo recomiendo a todos los creadores.",
+      "user": "laura_mendez",
+      "dateTime": "2023-11-04 15:30:18"
+    },
+    {
+      "product": 40284,
+      "score": 5,
+      "description": "Estoy sorprendido por lo nítido que se ve todo en este monitor LG. Ideal para ver películas en alta definición.",
+      "user": "roberto_perez",
+      "dateTime": "2023-11-04 15:45:59"
+    },
+    {
+      "product": 40284,
+      "score": 4,
+      "description": "La calidad de construcción de este monitor es excepcional. Es una adición perfecta a mi estación de trabajo.",
+      "user": "sofia_ramirez",
+      "dateTime": "2023-11-04 16:00:42"
+    },
+    {
+      "product": 40284,
+      "score": 4,
+      "description": "Este monitor LG 4K ha mejorado mi experiencia de juego. Los colores son vibrantes y la respuesta es rápida.",
+      "user": "juan_gomez",
+      "dateTime": "2023-11-04 16:15:21"
+    }
+  ]
+  

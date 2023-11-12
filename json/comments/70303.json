@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70303,
+      "score": 5,
+      "description": "Esta chaqueta deportiva es cómoda y de alta calidad. Me mantiene abrigado durante mis entrenamientos al aire libre.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 17:15:32"
+    },
+    {
+      "product": 70303,
+      "score": 4,
+      "description": "La calidad de esta chaqueta es sorprendente. Es resistente al viento y la lluvia, y tiene un diseño moderno.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 17:30:18"
+    },
+    {
+      "product": 70303,
+      "score": 5,
+      "description": "La chaqueta deportiva es versátil y se adapta a diferentes tipos de deporte. Me siento cómodo y con estilo.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 17:45:59"
+    },
+    {
+      "product": 70303,
+      "score": 4,
+      "description": "La comodidad y el diseño de esta chaqueta son notables. La uso tanto para hacer ejercicio como para salir casualmente.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 18:00:42"
+    },
+    {
+      "product": 70303,
+      "score": 4,
+      "description": "Esta chaqueta deportiva es imprescindible para cualquier persona activa. La calidad y el diseño son excepcionales.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 18:15:21"
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+{
+    "id": 70303,
+    "name": "Chaqueta deportiva",
+    "description": "Chaqueta deportiva resistente al viento y al agua para entrenamientos al aire libre.",
+    "cost": 60,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Indumentaria deportiva",
+    "images": [
+        "../img/img-json/chaqueta01.jpg",
+        "../img/img-json/chaqueta02.jpg",
+        "../img/img-json/chaqueta03.jpg",
+        "../img/img-json/chaqueta04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70304,
+            "name": "Balón de fútbol",
+            "image": "../img/img-json/pelota01.jpg"
+        },
+        {
+            "id": 70300,
+            "name": "Camiseta de fútbol",
+            "image": "../img/img-json/remerafut01.jpg"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70201,
+      "score": 5,
+      "description": "Este refrigerador de dos puertas es espacioso y eficiente. Mantiene mis alimentos frescos y organizados de manera impecable.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-06 03:15:32"
+    },
+    {
+      "product": 70201,
+      "score": 4,
+      "description": "La calidad de enfriamiento de este refrigerador es sorprendente. Mis alimentos se mantienen frescos durante más tiempo.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-06 03:30:18"
+    },
+    {
+      "product": 70201,
+      "score": 5,
+      "description": "El refrigerador de dos puertas es fácil de usar y tiene muchas características útiles. Me ha simplificado la vida en la cocina.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-06 03:45:59"
+    },
+    {
+      "product": 70201,
+      "score": 4,
+      "description": "La eficiencia energética de este refrigerador es destacable. He notado un ahorro significativo en mi factura de electricidad.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-06 04:00:42"
+    },
+    {
+      "product": 70201,
+      "score": 4,
+      "description": "Este refrigerador de dos puertas ha mejorado la organización de mi cocina. La calidad y la eficiencia son impresionantes.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-06 04:15:21"
+    }
+  ]
+  

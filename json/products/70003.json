@@ -1,0 +1,27 @@
+{
+    "id": 70003,
+    "name": "Taladro inalámbrico",
+    "description": "Taladro inalámbrico con batería recargable y múltiples velocidades.",
+    "cost": 60,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Herramientas",
+    "images": [
+        "../img/img-json/taladro01.jpg",
+        "../img/img-json/taladro02.jpg",
+        "../img/img-json/taladro03.jpg",
+        "../img/img-json/taladro04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70004,
+            "name": "Llave ajustable",
+            "image": "../img/img-json/llave01.jpg"
+        },
+        {
+            "id": 70000,
+            "name": "Martillo",
+            "image": "../img/img-json/martillo01.jpg"
+        }
+    ]
+}

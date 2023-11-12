@@ -1,0 +1,27 @@
+{
+    "id": 40286,
+    "name": "Mouse inalámbrico Logitech",
+    "description": "Mouse inalámbrico Logitech con seguimiento de alta precisión y diseño ergonómico.",
+    "cost": 60,
+    "currency": "USD",
+    "soldCount": 60,
+    "category": "Ratones",
+    "images": [
+        "../img/img-json/mouse01.jpg",
+        "../img/img-json/mouse02.jpg",
+        "../img/img-json/mouse03.jpg",
+        "../img/img-json/mouse04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 40281,
+            "name": "Computadora de escritorio",
+            "image": "img/prod40281_1.jpg"
+        },
+        {
+            "id": 40282,
+            "name": "Laptop ASUS",
+            "image": "../img/img-json/asus01.jpg"
+        }
+    ]
+}

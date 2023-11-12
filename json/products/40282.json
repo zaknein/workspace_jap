@@ -1,0 +1,27 @@
+{
+    "id": 40282,
+    "name": "Laptop ASUS",
+    "description": "Laptop ASUS con procesador de última generación y pantalla Full HD.",
+    "cost": 800,
+    "currency": "USD",
+    "soldCount": 50,
+    "category": "Computadoras",
+    "images": [
+        "../img/img-json/asus01.jpg",
+        "../img/img-json/asus02.jpg",
+        "../img/img-json/asus03.jpg",
+        "../img/img-json/asus04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 40283,
+            "name": "PC de escritorio HP",
+            "image": "../img/img-json/hp1.jpg"
+        },
+        {
+            "id": 40284,
+            "name": "Monitor LG 4K",
+            "image": "../img/img-json/monitor01.jpg"
+        }
+    ]
+}

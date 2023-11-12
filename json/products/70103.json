@@ -1,0 +1,27 @@
+{
+    "id": 70103,
+    "name": "Vestido de noche",
+    "description": "Vestido de noche elegante y sofisticado para ocasiones especiales.",
+    "cost": 80,
+    "currency": "USD",
+    "soldCount": 30,
+    "category": "Ropa",
+    "images": [
+        "../img/img-json/vestido01.jpg",
+        "../img/img-json/vestido02.jpg",
+        "../img/img-json/vestido03.jpg",
+        "../img/img-json/vestido04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70104,
+            "name": "Sombrero de ala ancha",
+            "image": "../img/img-json/sombrero01.jpg"
+        },
+        {
+            "id": 70100,
+            "name": "Camiseta de algodón",
+            "image": "../img/img-json/camiseta01.jpg"
+        }
+    ]
+}

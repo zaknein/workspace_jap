@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70000,
+      "score": 5,
+      "description": "El martillo es robusto y eficiente. Ha sido una herramienta esencial en mi caja de herramientas.",
+      "user": "carlos_gutierrez",
+      "dateTime": "2023-11-05 05:15:32"
+    },
+    {
+      "product": 70000,
+      "score": 4,
+      "description": "La calidad del martillo es notable. La empuñadura es cómoda y la cabeza del martillo es duradera.",
+      "user": "laura_rodriguez",
+      "dateTime": "2023-11-05 05:30:18"
+    },
+    {
+      "product": 70000,
+      "score": 5,
+      "description": "El martillo es versátil y resistente. Lo he utilizado para una variedad de tareas de construcción.",
+      "user": "javier_hernandez",
+      "dateTime": "2023-11-05 05:45:59"
+    },
+    {
+      "product": 70000,
+      "score": 4,
+      "description": "La precisión del martillo es excelente. Lo recomendaría a cualquier persona que necesite una herramienta de calidad.",
+      "user": "maria_gomez",
+      "dateTime": "2023-11-05 06:00:42"
+    },
+    {
+      "product": 70000,
+      "score": 4,
+      "description": "Este martillo ha sido confiable en cada proyecto. Es una adición esencial a mi equipo de bricolaje.",
+      "user": "daniel_perez",
+      "dateTime": "2023-11-05 06:15:21"
+    }
+  ]
+  

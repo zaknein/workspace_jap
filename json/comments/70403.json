@@ -1,0 +1,38 @@
+[
+    {
+      "product": 70403,
+      "score": 5,
+      "description": "El OnePlus 9 Pro es una maravilla de la tecnología. La cámara es espectacular y la velocidad de procesamiento es sorprendente.",
+      "user": "lucia_gomez",
+      "dateTime": "2023-11-07 03:15:32"
+    },
+    {
+      "product": 70403,
+      "score": 4,
+      "description": "La calidad de la pantalla de este OnePlus es excepcional. Los colores son vibrantes y la resolución es nítida.",
+      "user": "eduardo_martinez",
+      "dateTime": "2023-11-07 03:30:18"
+    },
+    {
+      "product": 70403,
+      "score": 5,
+      "description": "El OnePlus 9 Pro es versátil y tiene muchas características útiles. Me ha simplificado la vida en muchas formas.",
+      "user": "andrea_lopez",
+      "dateTime": "2023-11-07 03:45:59"
+    },
+    {
+      "product": 70403,
+      "score": 4,
+      "description": "La duración de la batería de este OnePlus es destacable. Puedo usarlo todo el día sin preocuparme por quedarme sin energía.",
+      "user": "sergio_gutierrez",
+      "dateTime": "2023-11-07 04:00:42"
+    },
+    {
+      "product": 70403,
+      "score": 4,
+      "description": "El OnePlus 9 Pro es una inversión que vale la pena. La calidad y el rendimiento son excepcionales.",
+      "user": "paola_martinez",
+      "dateTime": "2023-11-07 04:15:21"
+    }
+  ]
+  

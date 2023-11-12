@@ -48,9 +48,11 @@ iframe {
 	font-size: 20px;
 }
 .credManBody {
-	background-image: var(--backgroundimage);
+	background-image: 
+        var(--backgroundimage1),   /* Primera imagen */
+        var(--backgroundimage2);   /* Segunda imagen */
 	background-repeat: no-repeat, repeat;
-	background-size: cover;
+	background-size:  auto; /* La primera imagen se cubre, la segunda se repite automáticamente */
 }
 #credentialsDivTitle {
 	font: bold 120px monospace;
@@ -171,11 +173,17 @@ nav #log-out-btn {
 	position: absolute;
 	right: 0.5%;
 	display: none;
-	width: 120px;
+	width: 150px;
 	height: 50px;
+	font-weight: 500;
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
 	background-color: var(--colorprincipal);
+}
+nav #log-out-btn:hover{
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
 }
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -524,4 +532,9 @@ a.custom-card:hover {
 	box-sizing: border-box;
 	border: solid #bdb9b98d 5px;
 	border-left: none;
+}
+
+#CountCart{
+	background-color: white;
+	color: black;
 }

@@ -1,0 +1,37 @@
+[
+    {
+        "product": 70100,
+        "score": 5,
+        "description": "Esta camiseta de algodón es cómoda y suave al tacto. La calidad del material es excepcional.",
+        "user": "lucia_gomez",
+        "dateTime": "2023-11-05 15:15:32"
+    },
+    {
+        "product": 70100,
+        "score": 4,
+        "description": "La camiseta de algodón es perfecta para el uso diario. Se ajusta bien y es ideal para todas las estaciones.",
+        "user": "eduardo_martinez",
+        "dateTime": "2023-11-05 15:30:18"
+    },
+    {
+        "product": 70100,
+        "score": 5,
+        "description": "La comodidad de esta camiseta es inigualable. La he usado para hacer ejercicio y es muy transpirable.",
+        "user": "andrea_lopez",
+        "dateTime": "2023-11-05 15:45:59"
+    },
+    {
+        "product": 70100,
+        "score": 4,
+        "description": "La camiseta de algodón es duradera y mantiene su forma lavado tras lavado. La recomiendo sin dudarlo.",
+        "user": "sergio_gutierrez",
+        "dateTime": "2023-11-05 16:00:42"
+    },
+    {
+        "product": 70100,
+        "score": 4,
+        "description": "Esta camiseta es un básico en mi guardarropa. La calidad del algodón es excelente y se siente genial al usarla.",
+        "user": "paola_martinez",
+        "dateTime": "2023-11-05 16:15:21"
+    }
+]

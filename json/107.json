@@ -1,0 +1,52 @@
+{
+    "catID": 107,
+    "catName": "Electrodomésticos",
+    "products": [
+      {
+        "id": 70200,
+        "name": "Lavadora de carga frontal",
+        "description": "Lavadora de carga frontal con múltiples programas de lavado.",
+        "cost": 400,
+        "currency": "USD",
+        "soldCount": 50,
+        "image": "../img/img-json/lavarropa01.jpg"
+      },
+      {
+        "id": 70201,
+        "name": "Refrigerador de dos puertas",
+        "description": "Refrigerador de dos puertas con dispensador de agua y hielo.",
+        "cost": 700,
+        "currency": "USD",
+        "soldCount": 75,
+        "image": "../img/img-json/heladera01.jpg"
+      },
+      {
+        "id": 70202,
+        "name": "Horno de microondas",
+        "description": "Horno de microondas con múltiples configuraciones de cocción.",
+        "cost": 100,
+        "currency": "USD",
+        "soldCount": 30,
+        "image": "../img/img-json/microondas01.jpg"
+      },
+      {
+        "id": 70203,
+        "name": "Aspiradora robotizada",
+        "description": "Aspiradora robotizada que limpia tu hogar de forma automática.",
+        "cost": 250,
+        "currency": "USD",
+        "soldCount": 40,
+        "image": "../img/img-json/aspiradora01.jpg"
+      },
+      {
+        "id": 70204,
+        "name": "Licuadora de alta potencia",
+        "description": "Licuadora de alta potencia para hacer batidos y smoothies.",
+        "cost": 50,
+        "currency": "USD",
+        "soldCount": 60,
+        "image": "../img/img-json/licuadora01.jpg"
+      }
+    ]
+  }
+  

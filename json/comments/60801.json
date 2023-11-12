@@ -1,0 +1,38 @@
+[
+    {
+      "product": 60801,
+      "score": 5,
+      "description": "El juego de comedor es impresionante. La calidad de la madera y el diseño son excepcionales.",
+      "user": "ana_gomez",
+      "dateTime": "2023-11-04 23:15:32"
+    },
+    {
+      "product": 60801,
+      "score": 4,
+      "description": "El juego de comedor es muy elegante y cómodo. Perfecto para cenas familiares y reuniones.",
+      "user": "carlos_rodriguez",
+      "dateTime": "2023-11-04 23:30:18"
+    },
+    {
+      "product": 60801,
+      "score": 5,
+      "description": "La mesa y las sillas son de alta calidad. Este juego de comedor ha mejorado nuestro comedor.",
+      "user": "luis_perez",
+      "dateTime": "2023-11-04 23:45:59"
+    },
+    {
+      "product": 60801,
+      "score": 4,
+      "description": "La durabilidad y resistencia de este juego de comedor son notables. Lo recomendaría a amigos y familiares.",
+      "user": "maria_martinez",
+      "dateTime": "2023-11-05 00:00:42"
+    },
+    {
+      "product": 60801,
+      "score": 4,
+      "description": "El juego de comedor ha transformado nuestro espacio. Es funcional y hermoso a la vez.",
+      "user": "daniel_gonzalez",
+      "dateTime": "2023-11-05 00:15:21"
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+{
+    "id": 70403,
+    "name": "OnePlus 9 Pro",
+    "description": "El OnePlus 9 Pro con pantalla Fluid AMOLED y carga rápida.",
+    "cost": 799,
+    "currency": "USD",
+    "soldCount": 40,
+    "category": "Teléfonos móviles",
+    "images": [
+        "../img/img-json/oneplus01.jpg",
+        "../img/img-json/oneplus02.jpg",
+        "../img/img-json/oneplus03.jpg",
+        "../img/img-json/oneplus04.jpg"
+    ],
+    "relatedProducts": [
+        {
+            "id": 70404,
+            "name": "Xiaomi Mi 12",
+            "image": "../img/img-json/xiaomi1201.jpg"
+        },
+        {
+            "id": 70400,
+            "name": "iPhone 13",
+            "image": "../img/img-json/iphone1301.jpg"
+        }
+    ]
+}
